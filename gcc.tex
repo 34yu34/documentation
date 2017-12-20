@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{forest}
+\forestset{qtree/.style={for tree={parent anchor=south, %ajoute des retour de ligne dans les arbres
+	child anchor=north,align=center,inner sep=0pt}}}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=10mm,
+	top=20mm,
+  right=10mm,
+  bottom=20mm,
+}
+
+\author{Billy Bouchard}
+\title{GCC documentation}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Basic compilling}
+\begin{itemize}
+	\item generate an executable directly from the .cpp \\ \verb|g++ <filename>.cpp -o <outname>|
+	\item generate a binary file .o \\ \verb|g++ -c <filename>.cpp -o <outname>.o|
+	\item generate a simple output from multiple files \\ \verb|g++ <file1>.cpp <file2>.cpp <file3>.cpp -o <outname>|
+\end{itemize}
+\subsection{Mandatory flag for special lib}
+\begin{itemize}
+\end{itemize}
+\newpage
+\section{Flags}
+\subsection{before file flags}
+\begin{itemize}
+	\item generate more warning trough compiling \\ \verb|-Wall|
+	\item let you use gdb \\ \verb|-g|
+	\item optimized output \\ \verb|-O| (capital letter o)
+\end{itemize}
+\subsection{file flags MANDATORY for lib}
+\subsubsection{Math.h}
+generate a file with \verb|math.h| included \\ \verb|g++ <filename>.cpp -o <outname> -lm|
+\subsubsection{Xlib}
+generate a file with \verb|xlib.h| included \\ \verb|g++ <filename>.cpp -o <outname> -lX11|
+\end{document}
