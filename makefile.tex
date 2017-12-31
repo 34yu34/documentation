@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{forest}
+\forestset{qtree/.style={for tree={parent anchor=south, %ajoute des retour de ligne dans les arbres
+	child anchor=north,align=center,inner sep=0pt}}}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=10mm,
+	top=20mm,
+  right=10mm,
+  bottom=20mm,
+}
+
+\author{Billy Bouchard}
+\title{GCC documentation}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Basic Variable}
+\subsection{Creating a Variable}
+a variable can be anything
+\subsubsection{Direct Creation}
+Use : \\
+\verb|<VarName> = <Variable>|\\
+ex : \\
+\verb|HELLO = ../include}|
+
+\subsubsection{Multiple Direct Creation}
+Spacing each Var makes a List : \\
+\verb|<VarListName> = <Var1> <Var2> <Var3>|
+\verb|helloList = hello3.c hello2.c hello.c |
+\subsubsection{Copy and Replace Creation}
+You can copy any variable and replace it using the special command :
+\verb|<NewVarListName> = $(<VarListName>:.<CurrentExt>=.<WantedExt>)|\\
+ex: \\
+\verb|helloList2 = $(helloList:.c=.o)|
+
+
+\end{document}
