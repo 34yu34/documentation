@@ -34,11 +34,41 @@ ex : \\
 Spacing each Var makes a List : \\
 \verb|<VarListName> = <Var1> <Var2> <Var3>|
 \verb|helloList = hello3.c hello2.c hello.c |
+
+\subsubsection{Suffixe Creation}
+using wildcard operator helps a lot:\\
+\verb|<VarListName> = $(wildcard *<extension>)|
+\verb|hellolist = $(wildcard *.c)|
+
 \subsubsection{Copy and Replace Creation}
 You can copy any variable and replace it using the special command :
 \verb|<NewVarListName> = $(<VarListName>:.<CurrentExt>=.<WantedExt>)|\\
 ex: \\
 \verb|helloList2 = $(helloList:.c=.o)|
+\newpage
+\subsection{Target Condition}
+\subsubsection{Target Condition type}
+there is 2 target condition type :
+\begin{enumerate}
+ \item another target to be done prior to the one there
+ \item a file
+\end{enumerate}
+\subsubsection{Target-file condition}
+direct file is simple as putting file name: \\
+\verb|<target>:<filename>|\\
+\verb|single:  hello.c|
+\subsubsection{file-file condition}
+you can put a file name as a target:\\
+\verb|<filename1>:<filename2>|\\
+\verb|hello.o: hello.c|
+\subsubsection{files-files condition}
+you can put a lot of files by using \% operator:\\
+\verb|%<filesExtension>:%<filesExtension>|\\
+\verb|%.c:%.o|\\
+this will create n times the file-file condition!!!
+
+
+
 
 
 \end{document}
