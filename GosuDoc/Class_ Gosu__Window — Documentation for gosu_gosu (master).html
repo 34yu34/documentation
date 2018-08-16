@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.rubydoc.info/github/gosu/gosu/Gosu/Window -->
+<html class="gr__rubydoc_info">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Gosu::Window — Documentation for gosu
+
+  </title>
+
+  <link rel="stylesheet" href="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/style.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/common.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/custom.css" type="text/css" charset="utf-8">
+
+  <script async="" src="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/analytics.js"></script>
+  <script type="text/javascript" charset="utf-8">
+pathId = "Gosu::Window"
+relpath = '/';
+docsPrefix = '/github/gosu/gosu';
+listPrefix = '/list/github/gosu/gosu';
+searchPrefix = '/search/github/gosu/gosu';
+
+  </script>
+
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/autocomplete.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/rubydoc_custom.js"></script>
+
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <div class="nav_wrap">
+    <iframe id="nav" src="./Class_ Gosu__Window — Documentation for gosu_gosu (master)_files/class.html"></iframe>
+    <div id="resizer"></div>
+  </div>
+
+  <div id="main" tabindex="-1">
+    <div id="header">
+      <form class="search" method="get" action="https://www.rubydoc.info/search/github/gosu/gosu">
+        <input name="q" type="search" placeholder="Search" id="search_box" size="30" value="" autocomplete="off" class="ac_input">
+      </form>
+      <script type="text/javascript" charset="utf-8">
+$(function() {
+  $('#search_box').autocomplete($('#search_box').parent().attr('action'), {
+    width: 200,
+    formatItem: function(item) {
+      var values = item[0].split(",");
+      return values[0] + (values[1] == '' ? "" : " <small>(" + values[1] + ")</small>");
+    }
+  }).result(function(event, item) {
+    var values = item[0].split(",")
+    $('#search_box').val(values[1]);
+    location.href = values[3];
+    return false;
+  });
+});
+
+      </script>
+
+      <div id="menu">
+
+        <a href="https://www.rubydoc.info/github" target="_top">Libraries</a> »
+        <span class="title">gosu/gosu <small>(master)</small></span> »
+        <a href="https://www.rubydoc.info/github/gosu/gosu/index">Index (W)</a> »
+        <span class="title"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span>
+        »
+        <span class="title">Window</span>
+
+      </div>
+
+      <div id="search">
+
+        <a class="full_list_link" id="class_list_link" href="https://www.rubydoc.info/list/github/gosu/gosu/class">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="content">
+      <h1>Class: Gosu::Window
+
+
+
+</h1>
+      <div class="box_info">
+
+        <dl>
+          <dt>Inherits:</dt>
+          <dd>
+            <span class="inheritName">Object</span>
+
+            <ul class="fullTree">
+              <li>Object</li>
+
+              <li class="next">Gosu::Window</li>
+
+            </ul>
+            <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="inheritanceTree">show all</a>
+
+          </dd>
+        </dl>
+
+
+
+
+
+
+
+
+
+
+        <dl>
+          <dt>Defined in:</dt>
+          <dd>rdoc/gosu.rb</dd>
+        </dl>
+
+      </div>
+
+      <h2>Overview</h2>
+      <div class="docstring">
+        <div class="discussion">
+
+          <div class="note notetag">
+            <strong>Note:</strong>
+            <div class="inline">
+              <p>There should really only be one instance of this class at a time. This may or may not change later.</p>
+            </div>
+          </div>
+
+
+          <p>Main class that serves as the foundation of a standard Gosu application. Manages initialization of all of Gosu's core components and provides timing functionality.</p>
+
+          <p>Note that all coordinates, even the mouse position, are in client coordinates, relative to the window’s top left corner. This means that the mouse position can be negative or larger than the window size.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div>
+
+
+
+      <h2>Instance Attribute Summary <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="summary_toggle">collapse</a></small></h2>
+      <ul class="summary">
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#caption-instance_method" title="#caption (instance method)">#<strong>caption</strong>  ⇒ String </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The window's caption, usually displayed in the title bar.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#fullscreen=-instance_method" title="#fullscreen= (instance method)">#<strong>fullscreen</strong>  ⇒ Object </a>
+
+
+
+  </span>
+
+
+
+
+
+          <span class="note title writeonly">writeonly</span>
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Toggles between windowed mode and fullscreen.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#height-instance_method" title="#height (instance method)">#<strong>height</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The window's height, in pixels.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#mouse_x-instance_method" title="#mouse_x (instance method)">#<strong>mouse_x</strong>  ⇒ Float </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The mouse pointer's window-based X coordinate.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#mouse_y-instance_method" title="#mouse_y (instance method)">#<strong>mouse_y</strong>  ⇒ Float </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The mouse pointer's window-based Y coordinate.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#text_input-instance_method" title="#text_input (instance method)">#<strong>text_input</strong>  ⇒ TextInput? </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The currently active <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span>.</p>
+    </div>
+    </span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update_interval-instance_method" title="#update_interval (instance method)">#<strong>update_interval</strong>  ⇒ Float </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>The interval between calls to <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update-instance_method" title="Gosu::Window#update (method)">#update</a></span>, in milliseconds.</p>
+  </div>
+  </span>
+
+  </li>
+
+
+  <li class="public ">
+    <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#width-instance_method" title="#width (instance method)">#<strong>width</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+    <span class="summary_desc"><div class="inline">
+<p>The window's width, in pixels.</p>
+</div></span>
+
+  </li>
+
+
+  </ul>
+
+
+
+
+
+  <h2>
+      Callbacks
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+  <ul class="summary">
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#button_down-instance_method" title="#button_down (instance method)">#<strong>button_down</strong>(id)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method is called before <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update-instance_method" title="Gosu::Window#update (method)">#update</a></span> if a button is pressed while the window has focus.</p>
+      </div>
+      </span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#button_up-instance_method" title="#button_up (instance method)">#<strong>button_up</strong>(id)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method is called before <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update-instance_method" title="Gosu::Window#update (method)">#update</a></span> if a button is released while the window has focus.</p>
+      </div>
+      </span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#close-instance_method" title="#close (instance method)">#<strong>close</strong>  ⇒ bool </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method is called whenever the user tries to close the window, e.g.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="#draw (instance method)">#<strong>draw</strong>  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method is called after every update and whenever the OS wants the
+window to repaint itself.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#drop-instance_method" title="#drop (instance method)">#<strong>drop</strong>(filename)  ⇒ Object </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>Called when a file is dropped onto the window.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#needs_cursor%3F-instance_method" title="#needs_cursor? (instance method)">#<strong>needs_cursor?</strong>  ⇒ true, false </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method can be overriden to control the visibility of the system cursor
+over your window, e.g., for level editors or other situations where
+introducing a custom cursor or hiding the default one is not desired.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#needs_redraw%3F-instance_method" title="#needs_redraw? (instance method)">#<strong>needs_redraw?</strong>  ⇒ true, false </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method can be overriden to give the game a chance to opt out of a call
+to <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">#draw</a></span>; however, the operating system can still force a redraw for any reason.
+      </p>
+      </div>
+      </span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update-instance_method" title="#update (instance method)">#<strong>update</strong>  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>This method is called once every <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update_interval-instance_method" title="Gosu::Window#update_interval (method)">#update_interval</a></span> milliseconds while the window is being shown.</p>
+      </div>
+      </span>
+
+    </li>
+
+
+  </ul>
+
+  <h2>
+      Instance Method Summary
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+  <ul class="summary">
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#close!-instance_method" title="#close! (instance method)">#<strong>close!</strong>  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>Tells the window to end the current run loop as soon as possible.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#fullscreen%3F-instance_method" title="#fullscreen? (instance method)">#<strong>fullscreen?</strong>  ⇒ true, false </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>Whether this is a fullscreen window.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(width, height, options)  ⇒ Window </a>
+
+
+
+  </span>
+
+
+      <span class="note title constructor">constructor</span>
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>Creates a new window with the requested size.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#show-instance_method" title="#show (instance method)">#<strong>show</strong>  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>Enters a modal loop where the Window is visible on screen and receives
+calls to draw, update etc.</p>
+</div></span>
+
+    </li>
+
+
+    <li class="public ">
+      <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#tick-instance_method" title="#tick (instance method)">#<strong>tick</strong>  ⇒ true, false </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+      <span class="summary_desc"><div class="inline">
+<p>EXPERIMENTAL - MAY DISAPPEAR WITHOUT WARNING.</p>
+</div></span>
+
+    </li>
+
+
+  </ul>
+
+
+  <div id="constructor_details" class="method_details_list">
+    <h2>Constructor Details</h2>
+
+    <div class="method_details first">
+      <h3 class="signature first" id="initialize-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:initialize">permalink</a>
+
+
+      <span class="overload">#<strong>initialize</strong>(width, height, options = {})  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window" title="Gosu::Window (class)">Window</a></span></tt> </span>
+
+      <span class="overload">#<strong>initialize</strong>(width, height, fullscreen, update_interval = 16.666666)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window" title="Gosu::Window (class)">Window</a></span></tt> </span>
+
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("initialize-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:initialize">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <div class="note notetag">
+            <strong>Note:</strong>
+            <div class="inline">
+              <p>The actual window may be smaller if the requested size is too large for the current display resolution; in that case, Gosu will automatically scale all coordinates to transparently emulate a larger window. No need to thank us.</p>
+            </div>
+          </div>
+
+
+          <p>Creates a new window with the requested size.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+
+
+
+
+
+
+        <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+        <ul class="option">
+
+          <li>
+            <span class="name">:fullscreen</span>
+            <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+            <span class="default">
+
+              — default:
+              <tt>false</tt>
+
+          </span> —
+            <div class="inline">
+              <p>whether to present the window in fullscreen mode.</p>
+            </div>
+
+          </li>
+
+          <li>
+            <span class="name">:update_interval</span>
+            <span class="type">(<tt>Float</tt>)</span>
+            <span class="default">
+
+              — default:
+              <tt>16.666666</tt>
+
+          </span> —
+            <div class="inline">
+              <p>the interval between frames, in milliseconds.</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L752">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+752</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 752</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_initialize">initialize</span><span class="lparen">(</span><span class="id identifier rubyid_width">width</span><span class="comma">,</span> <span class="id identifier rubyid_height">height</span><span class="comma">,</span> <span class="id identifier rubyid_options">options</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+
+
+    <span id="caption=-instance_method"></span>
+    <div class="method_details first">
+      <h3 class="signature first" id="caption-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:caption">permalink</a>
+
+    #<strong>caption</strong>  ⇒ <tt>String</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("caption-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:caption">permalink</a>');
+
+      </script>
+      [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L699">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+699
+700
+701</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 699</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_caption">caption</span>
+  <span class="ivar">@caption</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id=""></span>
+    <div class="method_details ">
+      <h3 class="signature " id="fullscreen=-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:fullscreen=">permalink</a>
+
+    #<strong>fullscreen=</strong>(value)  ⇒ <tt>Object</tt>  <span class="extras">(writeonly)</span>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("fullscreen=-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:fullscreen=">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>Toggles between windowed mode and fullscreen.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L733">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+733
+734
+735</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 733</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_fullscreen=">fullscreen=</span><span class="lparen">(</span><span class="id identifier rubyid_value">value</span><span class="rparen">)</span>
+  <span class="ivar">@fullscreen</span> <span class="op">=</span> <span class="id identifier rubyid_value">value</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id="height=-instance_method"></span>
+    <div class="method_details ">
+      <h3 class="signature " id="height-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:height">permalink</a>
+
+    #<strong>height</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("height-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:height">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>The window's height, in pixels. This only counts the drawable area and does not include any borders or decorations added by the window manager.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L725">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+725
+726
+727</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 725</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_height">height</span>
+  <span class="ivar">@height</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id="mouse_x=-instance_method"></span>
+    <div class="method_details ">
+      <h3 class="signature " id="mouse_x-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:mouse_x">permalink</a>
+
+    #<strong>mouse_x</strong>  ⇒ <tt>Float</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("mouse_x-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:mouse_x">permalink</a>');
+
+      </script>
+      [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L703">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+703
+704
+705</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 703</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_mouse_x">mouse_x</span>
+  <span class="ivar">@mouse_x</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id="mouse_y=-instance_method"></span>
+    <div class="method_details ">
+      <h3 class="signature " id="mouse_y-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:mouse_y">permalink</a>
+
+    #<strong>mouse_y</strong>  ⇒ <tt>Float</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("mouse_y-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:mouse_y">permalink</a>');
+
+      </script>
+      [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L707">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+707
+708
+709</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 707</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_mouse_y">mouse_y</span>
+  <span class="ivar">@mouse_y</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id="text_input=-instance_method"></span>
+    <div class="method_details ">
+      <h3 class="signature " id="text_input-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:text_input">permalink</a>
+
+    #<strong>text_input</strong>  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span>?</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("text_input-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:text_input">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>The currently active <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span>. If not nil, all keyboard input will be handled by this object.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L713">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+713
+714
+715</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 713</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_text_input">text_input</span>
+  <span class="ivar">@text_input</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id="update_interval=-instance_method"></span>
+    <div class="method_details ">
+      <h3 class="signature " id="update_interval-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:update_interval">permalink</a>
+
+    #<strong>update_interval</strong>  ⇒ <tt>Float</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("update_interval-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:update_interval">permalink</a>');
+
+      </script>
+      [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L737">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+737
+738
+739</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 737</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_update_interval">update_interval</span>
+  <span class="ivar">@update_interval</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <span id="width=-instance_method"></span>
+    <div class="method_details ">
+      <h3 class="signature " id="width-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:width">permalink</a>
+
+    #<strong>width</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("width-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:width">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>The window's width, in pixels. This only counts the drawable area and does not include any borders or decorations added by the window manager.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L719">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+719
+720
+721</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 719</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_width">width</span>
+  <span class="ivar">@width</span>
+<span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+
+    <div class="method_details first">
+      <h3 class="signature first" id="button_down-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:button_down">permalink</a>
+
+    #<strong>button_down</strong>(id)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("button_down-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:button_down">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+          <p class="note returns_void">This method returns an undefined value.</p>
+          <p>This method is called before <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update-instance_method" title="Gosu::Window#update (method)">#update</a></span> if a button is pressed while the window has focus.</p>
+
+          <p>By default, this method will toggle fullscreen mode if the user presses Alt+Enter (Windows, Linux) or cmd+F (macOS). To support these shortcuts in your application, make sure to call super in your implementation.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+        <p class="tag_title">See Also:</p>
+        <ul class="see">
+
+          <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#button_up-instance_method" title="Gosu::Window#button_up (method)">#button_up</a></span></li>
+
+          <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#button_down%3F-class_method" title="Gosu.button_down? (method)">Gosu.button_down?</a></span></li>
+
+        </ul>
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L832">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+832</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 832</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_button_down">button_down</span><span class="lparen">(</span><span class="id identifier rubyid_id">id</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="button_up-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:button_up">permalink</a>
+
+    #<strong>button_up</strong>(id)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("button_up-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:button_up">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+          <p class="note returns_void">This method returns an undefined value.</p>
+          <p>This method is called before <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update-instance_method" title="Gosu::Window#update (method)">#update</a></span> if a button is released while the window has focus.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+        <p class="tag_title">See Also:</p>
+        <ul class="see">
+
+          <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#button_down-instance_method" title="Gosu::Window#button_down (method)">#button_down</a></span></li>
+
+          <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#button_down%3F-class_method" title="Gosu.button_down? (method)">Gosu.button_down?</a></span></li>
+
+        </ul>
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L842">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+842</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 842</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_button_up">button_up</span><span class="lparen">(</span><span class="id identifier rubyid_id">id</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="close-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:close">permalink</a>
+
+    #<strong>close</strong>  ⇒ <tt>bool</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("close-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:close">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>This method is called whenever the user tries to close the window, e.g. by clicking the [x] button in the window's title bar. If you do not want the window to close immediately, you should override this method and call the <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#close!-instance_method" title="Gosu::Window#close! (method)">#close!</a></span> when needed.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L817">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+817</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 817</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_close">close</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="close!-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:close!">permalink</a>
+
+    #<strong>close!</strong>  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("close!-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:close!">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+          <p class="note returns_void">This method returns an undefined value.</p>
+          <p>Tells the window to end the current run loop as soon as possible.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L778">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+778</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 778</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_close!">close!</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="draw-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:draw">permalink</a>
+
+    #<strong>draw</strong>  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("draw-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:draw">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+          <p class="note returns_void">This method returns an undefined value.</p>
+          <p>This method is called after every update and whenever the OS wants the window to repaint itself. Your application's rendering code should go here.
+          </p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+        <p class="tag_title">See Also:</p>
+        <ul class="see">
+
+          <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#needs_redraw%3F-instance_method" title="Gosu::Window#needs_redraw? (method)">#needs_redraw?</a></span></li>
+
+        </ul>
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L794">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+794</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 794</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw">draw</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="drop-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:drop">permalink</a>
+
+    #<strong>drop</strong>(filename)  ⇒ <tt>Object</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("drop-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:drop">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>Called when a file is dropped onto the window.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L848">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+848</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 848</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_drop">drop</span><span class="lparen">(</span><span class="id identifier rubyid_filename">filename</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="fullscreen?-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:fullscreen%3F">permalink</a>
+
+    #<strong>fullscreen?</strong>  ⇒ <tt>true</tt>, <tt>false</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("fullscreen?-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:fullscreen%3F">permalink</a>');
+
+      </script>
+      <span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L729">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+729</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 729</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_fullscreen?">fullscreen?</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="needs_cursor?-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:needs_cursor%3F">permalink</a>
+
+    #<strong>needs_cursor?</strong>  ⇒ <tt>true</tt>, <tt>false</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("needs_cursor?-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:needs_cursor%3F">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>This method can be overriden to control the visibility of the system cursor over your window, e.g., for level editors or other situations where introducing a custom cursor or hiding the default one is not desired.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L808">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+808</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 808</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_needs_cursor?">needs_cursor?</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="needs_redraw?-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:needs_redraw%3F">permalink</a>
+
+    #<strong>needs_redraw?</strong>  ⇒ <tt>true</tt>, <tt>false</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("needs_redraw?-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:needs_redraw%3F">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>This method can be overriden to give the game a chance to opt out of a call to <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">#draw</a></span>; however, the operating system can still force a redraw for any reason.
+          </p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+        <p class="tag_title">See Also:</p>
+        <ul class="see">
+
+          <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">#draw</a></span></li>
+
+        </ul>
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L802">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+802</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 802</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_needs_redraw?">needs_redraw?</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="show-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:show">permalink</a>
+
+    #<strong>show</strong>  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("show-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:show">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+          <p class="note returns_void">This method returns an undefined value.</p>
+          <p>Enters a modal loop where the Window is visible on screen and receives calls to draw, update etc.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L758">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+758</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 758</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_show">show</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="tick-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:tick">permalink</a>
+
+    #<strong>tick</strong>  ⇒ <tt>true</tt>, <tt>false</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("tick-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:tick">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>EXPERIMENTAL - MAY DISAPPEAR WITHOUT WARNING.</p>
+
+          <p>Performs a single step in the main loop. This can be useful for integrating Gosu with other libraries that have their own main loop, e.g. Ruby/Tk.</p>
+
+          <p>See: <a href="https://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=1218">www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=1218</a></p>
+
+          <p>If you find a good way to use <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#tick-instance_method" title="Gosu::Window#tick (method)">#tick</a></span>, please let us know on the forum and we can make this a part of Gosu's stable interface. Thank you!</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L772">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+772</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 772</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_tick">tick</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="method_details ">
+      <h3 class="signature " id="update-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FWindow:update">permalink</a>
+
+    #<strong>update</strong>  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+      <script>
+$(document.getElementById("update-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FWindow:update">permalink</a>');
+
+      </script>
+      <div class="docstring">
+        <div class="discussion">
+          <p class="note returns_void">This method returns an undefined value.</p>
+          <p>This method is called once every <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#update_interval-instance_method" title="Gosu::Window#update_interval (method)">#update_interval</a></span> milliseconds while the window is being shown. Your application's main logic should go here.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L786">View on GitHub</a>]
+      <table class="source_code">
+        <tbody>
+          <tr>
+            <td>
+              <pre class="lines">
+
+786</pre>
+            </td>
+            <td>
+              <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 786</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_update">update</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  </div>
+
+  <div id="footer">
+    Generated on Sat Jul 28 00:15:43 2018 by
+    <a href="http://yardoc.org/" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.9.15 (ruby-2.3.1).
+  </div>
+
+
+
+
+  <script>
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-7172246-5', 'auto');
+ga('send', 'pageview');
+
+  </script>
+
+
+  </div>
+
+</body>
+
+</html>

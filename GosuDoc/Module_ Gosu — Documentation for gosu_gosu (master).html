@@ -1,0 +1,4583 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.rubydoc.info/github/gosu/gosu/Gosu -->
+<html class="gr__rubydoc_info"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Gosu
+  
+    — Documentation for gosu/gosu (master)
+  
+</title>
+
+  <link rel="stylesheet" href="./Module_ Gosu — Documentation for gosu_gosu (master)_files/style.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Module_ Gosu — Documentation for gosu_gosu (master)_files/common.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Module_ Gosu — Documentation for gosu_gosu (master)_files/custom.css" type="text/css" charset="utf-8">
+
+<script async="" src="./Module_ Gosu — Documentation for gosu_gosu (master)_files/analytics.js"></script><script type="text/javascript" charset="utf-8">
+  pathId = "Gosu"
+  relpath = '/';
+  docsPrefix = '/github/gosu/gosu';
+  listPrefix = '/list/github/gosu/gosu';
+  searchPrefix = '/search/github/gosu/gosu';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="./Module_ Gosu — Documentation for gosu_gosu (master)_files/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Module_ Gosu — Documentation for gosu_gosu (master)_files/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Module_ Gosu — Documentation for gosu_gosu (master)_files/autocomplete.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Module_ Gosu — Documentation for gosu_gosu (master)_files/rubydoc_custom.js"></script>
+
+
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div class="nav_wrap">
+      <iframe id="nav" src="./Module_ Gosu — Documentation for gosu_gosu (master)_files/class.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <form class="search" method="get" action="https://www.rubydoc.info/search/github/gosu/gosu">
+  <input name="q" type="search" placeholder="Search" id="search_box" size="30" value="" autocomplete="off" class="ac_input">
+</form>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+    $('#search_box').autocomplete($('#search_box').parent().attr('action'), {
+      width: 200,
+      formatItem: function(item) {
+        var values = item[0].split(",");
+        return values[0] + (values[1] == '' ? "" : " <small>(" + values[1] + ")</small>");
+      }
+    }).result(function(event, item) {
+      var values = item[0].split(",")
+      $('#search_box').val(values[1]);
+      location.href = values[3];
+      return false;
+    });
+  });
+</script>
+
+<div id="menu">
+  
+    <a href="https://www.rubydoc.info/github" target="_top">Libraries</a> »
+    <span class="title">gosu/gosu <small>(master)</small></span>
+  
+  
+    »
+    <a href="https://www.rubydoc.info/github/gosu/gosu/index">Index (G)</a> »
+    
+    
+    <span class="title">Gosu</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link" href="https://www.rubydoc.info/list/github/gosu/gosu/class">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Gosu
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>rdoc/gosu.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Channel" title="Gosu::Channel (class)">Channel</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Font" title="Gosu::Font (class)">Font</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/GLTexInfo" title="Gosu::GLTexInfo (class)">GLTexInfo</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Sample" title="Gosu::Sample (class)">Sample</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Song" title="Gosu::Song (class)">Song</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span>, <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window" title="Gosu::Window (class)">Window</a></span>
+    
+  
+</p>
+
+  
+    <h2>
+      Constant Summary
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="MAJOR_VERSION-constant" class="">MAJOR_VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>The first component of the version.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MINOR_VERSION-constant" class="">MINOR_VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>The second component of the version.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="POINT_VERSION-constant" class="">POINT_VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>The third component of the version.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>A version string of the form “0.1.2”, “0.1.2.3” or “0.1.2pre4”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:a_string</span></pre></dd>
+      
+        <dt id="LICENSES-constant" class="">LICENSES =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>A block of legal copy that your game is obliged to display somewhere.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:a_string</span></pre></dd>
+      
+        <dt id="KB_0…KB_9-constant" class="">KB_0…KB_9 =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_A…KB_Z-constant" class="">KB_A…KB_Z =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_APOSTROPHE-constant" class="">KB_APOSTROPHE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_BACKSLASH-constant" class="">KB_BACKSLASH =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_BACKSPACE-constant" class="">KB_BACKSPACE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_BACKTICK-constant" class="">KB_BACKTICK =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_COMMA-constant" class="">KB_COMMA =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_DELETE-constant" class="">KB_DELETE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_DOWN-constant" class="">KB_DOWN =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_END-constant" class="">KB_END =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_ENTER-constant" class="">KB_ENTER =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>This is the key on the numpad.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_EQUALS-constant" class="">KB_EQUALS =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_ESCAPE-constant" class="">KB_ESCAPE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_F1…KB_F12-constant" class="">KB_F1…KB_F12 =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_HOME-constant" class="">KB_HOME =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_INSERT-constant" class="">KB_INSERT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_ISO-constant" class="">KB_ISO =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_LEFT-constant" class="">KB_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_LEFT_ALT-constant" class="">KB_LEFT_ALT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_LEFT_BRACKET-constant" class="">KB_LEFT_BRACKET =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_LEFT_CONTROL-constant" class="">KB_LEFT_CONTROL =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_LEFT_META-constant" class="">KB_LEFT_META =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_LEFT_SHIFT-constant" class="">KB_LEFT_SHIFT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_MINUS-constant" class="">KB_MINUS =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_NUMPAD_0…KB_NUMPAD_9-constant" class="">KB_NUMPAD_0…KB_NUMPAD_9 =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_NUMPAD_DIVIDE-constant" class="">KB_NUMPAD_DIVIDE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_NUMPAD_MINUS-constant" class="">KB_NUMPAD_MINUS =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_NUMPAD_MULTIPLY-constant" class="">KB_NUMPAD_MULTIPLY =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_NUMPAD_PLUS-constant" class="">KB_NUMPAD_PLUS =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_PAGE_DOWN-constant" class="">KB_PAGE_DOWN =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_PAGE_UP-constant" class="">KB_PAGE_UP =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_PERIOD-constant" class="">KB_PERIOD =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RETURN-constant" class="">KB_RETURN =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>This is the key above the right shift key.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RIGHT-constant" class="">KB_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RIGHT_ALT-constant" class="">KB_RIGHT_ALT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RIGHT_BRACKET-constant" class="">KB_RIGHT_BRACKET =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RIGHT_CONTROL-constant" class="">KB_RIGHT_CONTROL =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RIGHT_META-constant" class="">KB_RIGHT_META =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_RIGHT_SHIFT-constant" class="">KB_RIGHT_SHIFT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_SEMICOLON-constant" class="">KB_SEMICOLON =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_SLASH-constant" class="">KB_SLASH =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_SPACE-constant" class="">KB_SPACE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_TAB-constant" class="">KB_TAB =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="KB_UP-constant" class="">KB_UP =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MS_LEFT-constant" class="">MS_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MS_MIDDLE-constant" class="">MS_MIDDLE =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MS_RIGHT-constant" class="">MS_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MS_WHEEL_DOWN-constant" class="">MS_WHEEL_DOWN =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MS_WHEEL_UP-constant" class="">MS_WHEEL_UP =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="MS_OTHER_0…MS_OTHER_7-constant" class="">MS_OTHER_0…MS_OTHER_7 =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_BUTTON_0…GP_BUTTON_15-constant" class="">GP_BUTTON_0…GP_BUTTON_15 =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_DOWN-constant" class="">GP_DOWN =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_LEFT-constant" class="">GP_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_RIGHT-constant" class="">GP_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_UP-constant" class="">GP_UP =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_0_BUTTON_0…GP_3_BUTTON_15-constant" class="">GP_0_BUTTON_0…GP_3_BUTTON_15 =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_0_DOWN…GP_3_DOWN-constant" class="">GP_0_DOWN…GP_3_DOWN =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_0_LEFT…GP_3_LEFT-constant" class="">GP_0_LEFT…GP_3_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_0_RIGHT…GP_3_RIGHT-constant" class="">GP_0_RIGHT…GP_3_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+        <dt id="GP_0_UP…GP_3_UP-constant" class="">GP_0_UP…GP_3_UP =
+          
+        </dt>
+        <dd><pre class="code"><span class="symbol">:an_integer</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Drawing primitives
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_line-class_method" title="draw_line (class method)">.<strong>draw_line</strong>(x1, y1, c1, x2, y2, c2, z = 0, mode = :default)  ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Draws a line from one point to another—inconsistently.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_quad-class_method" title="draw_quad (class method)">.<strong>draw_quad</strong>(x1, y1, c1, x2, y2, c2, x3, y3, c3, x4, y4, c4, z = 0, mode = :default)  ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Draws a quad (actually two triangles).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_rect-class_method" title="draw_rect (class method)">.<strong>draw_rect</strong>(x, y, width, height, c, z = 0, mode = :default)  ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Draws a rectangle (actually a quad, or two triangles).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_triangle-class_method" title="draw_triangle (class method)">.<strong>draw_triangle</strong>(x1, y1, c1, x2, y2, c2, x3, y3, c3, z = 0, mode = :default)  ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Draws a triangle.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Manipulating the current drawing context
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#clip_to-class_method" title="clip_to (class method)">.<strong>clip_to</strong>(x, y, w, h) { ... } ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Masks the drawing area inside the block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#flush-class_method" title="flush (class method)">.<strong>flush</strong>  ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Flushes all drawing operations to OpenGL so that Z-ordering can start anew.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#gl-class_method" title="gl (class method)">.<strong>gl</strong>(z = nil) { ... } ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Runs the block in a clean OpenGL environment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#record-class_method" title="record (class method)">.<strong>record</strong>(width, height) { ... } ⇒ Gosu::Image </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Records all drawing operations inside the block as a reusable “image”.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#rotate-class_method" title="rotate (class method)">.<strong>rotate</strong>(angle, around_x = 0, around_y = 0) { ... } ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Rotates all drawing operations inside the block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#scale-class_method" title="scale (class method)">.<strong>scale</strong>(scale_x, scale_y, around_x, around_y) { ... } ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Scales all drawing operations inside the block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#transform-class_method" title="transform (class method)">.<strong>transform</strong>(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15) { ... } ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Applies a free-form matrix transformation to everything drawn in the block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#translate-class_method" title="translate (class method)">.<strong>translate</strong>(x, y) { ... } ⇒ void </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Offsets all drawing operations inside the block.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Class Method Summary
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#angle-class_method" title="angle (class method)">.<strong>angle</strong>(x1, y1, x2, y2)  ⇒ Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The angular distance from (x1, y1) to (x1, y2) in degrees, where 0.0 is up.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#angle_diff-class_method" title="angle_diff (class method)">.<strong>angle_diff</strong>(angle1, angle2)  ⇒ Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The shortest angular distance from angle1 to angle2.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#available_height-class_method" title="available_height (class method)">.<strong>available_height</strong>  ⇒ Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>All windows larger than this size will automatically be shrunk to fit.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#available_width-class_method" title="available_width (class method)">.<strong>available_width</strong>  ⇒ Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>All windows larger than this size will automatically be shrunk to fit.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#button_down%3F-class_method" title="button_down? (class method)">.<strong>button_down?</strong>(id)  ⇒ true, false </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Returns whether the button `id` is currently pressed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#button_id_to_char-class_method" title="button_id_to_char (class method)">.<strong>button_id_to_char</strong>(id)  ⇒ String? </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Returns the character a button usually produces, if any.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#char_to_button_id-class_method" title="char_to_button_id (class method)">.<strong>char_to_button_id</strong>(char)  ⇒ Integer? </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Returns the button that usually produces a character, if any.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#default_font_name-class_method" title="default_font_name (class method)">.<strong>default_font_name</strong>  ⇒ String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The name of a neutral font that is available on the current platform.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#distance-class_method" title="distance (class method)">.<strong>distance</strong>(x1, y1, x2, y2)  ⇒ Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The distance from (x1, y1) to (x2, y2).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#fps-class_method" title="fps (class method)">.<strong>fps</strong>  ⇒ Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The current framerate, in frames per second.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#language-class_method" title="language (class method)">.<strong>language</strong>  ⇒ String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>Returns the language code for the user's preferred language.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#milliseconds-class_method" title="milliseconds (class method)">.<strong>milliseconds</strong>  ⇒ Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The number of milliseconds elapsed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#offset_x-class_method" title="offset_x (class method)">.<strong>offset_x</strong>(theta, r)  ⇒ Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The X component of a vector of angle theta and magnitude r, or the
+horizontal distance covered by moving r pixels in the direction given by
+theta.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#offset_y-class_method" title="offset_y (class method)">.<strong>offset_y</strong>(theta, r)  ⇒ Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The Y component of a vector of angle theta and magnitude r, or the vertical
+distance covered by moving r pixels in the direction given by theta.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#random-class_method" title="random (class method)">.<strong>random</strong>(min, max)  ⇒ Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>A random number in the range [min; max).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#screen_height-class_method" title="screen_height (class method)">.<strong>screen_height</strong>  ⇒ Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The height (in pixels) of the user's primary screen.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#screen_width-class_method" title="screen_width (class method)">.<strong>screen_width</strong>  ⇒ Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class="inline">
+<p>The width (in pixels) of the user's primary screen.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="angle-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.angle">permalink</a>
+  
+    .<strong>angle</strong>(x1, y1, x2, y2)  ⇒ <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("angle-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eangle">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the angular distance from (x1, y1) to (x1, y2) in degrees, where
+0.0 is up. Returns 0 if both points are equal.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the angular distance from (x1, y1) to (x1, y2) in degrees, where 0.0 is up.
+Returns 0 if both points are equal.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1168">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1168</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1168</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_angle">angle</span><span class="lparen">(</span><span class="id identifier rubyid_x1">x1</span><span class="comma">,</span> <span class="id identifier rubyid_y1">y1</span><span class="comma">,</span> <span class="id identifier rubyid_x2">x2</span><span class="comma">,</span> <span class="id identifier rubyid_y2">y2</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="angle_diff-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.angle_diff">permalink</a>
+  
+    .<strong>angle_diff</strong>(angle1, angle2)  ⇒ <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("angle_diff-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eangle_diff">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the shortest angular distance from angle1 to angle2. This can be
+negative if counter-clockwise rotation would yield a shorter distance.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">angle1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">angle2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the shortest angular distance from angle1 to angle2. This can be negative
+if counter-clockwise rotation would yield a shorter distance.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1174">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1174</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1174</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_angle_diff">angle_diff</span><span class="lparen">(</span><span class="id identifier rubyid_angle1">angle1</span><span class="comma">,</span> <span class="id identifier rubyid_angle2">angle2</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="available_height-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.available_height">permalink</a>
+  
+    .<strong>available_height</strong>  ⇒ <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("available_height-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eavailable_height">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>All windows larger than this size will automatically be shrunk to fit.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the maximum height (in 'points') that is available for a
+non-fullscreen Window.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1214">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1214</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1214</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_available_height">available_height</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="available_width-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.available_width">permalink</a>
+  
+    .<strong>available_width</strong>  ⇒ <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("available_width-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eavailable_width">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>All windows larger than this size will automatically be shrunk to fit.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the maximum width (in 'points') that is available for a
+non-fullscreen Window.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1210">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1210</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1210</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_available_width">available_width</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="button_down?-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.button_down%3F">permalink</a>
+  
+    .<strong>button_down?</strong>(id)  ⇒ <tt>true</tt>, <tt>false</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("button_down?-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Ebutton_down%3F">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns whether the button `id` is currently pressed. Button states are
+updated once per tick, so repeated calls during the same tick will always
+yield the same result.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>whether the button is currently pressed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#button_down-instance_method" title="Gosu::Window#button_down (method)">Gosu::Window#button_down</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#button_up-instance_method" title="Gosu::Window#button_up (method)">Gosu::Window#button_up</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L891">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+891</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 891</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_button_down?">button_down?</span><span class="lparen">(</span><span class="id identifier rubyid_id">id</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="button_id_to_char-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.button_id_to_char">permalink</a>
+  
+    .<strong>button_id_to_char</strong>(id)  ⇒ <tt>String?</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("button_id_to_char-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Ebutton_id_to_char">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>For real text input, look at <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span> instead.</p>
+</div>
+  </div>
+
+
+<p>Returns the character a button usually produces, if any.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">id</span>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the button's platform-defined id.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>String?</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the character the button usually produces.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#char_to_button_id-class_method" title="Gosu.char_to_button_id (method)">char_to_button_id</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#text_input-instance_method" title="Gosu::Window#text_input (method)">Gosu::Window#text_input</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1131">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1131</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_button_id_to_char">button_id_to_char</span><span class="lparen">(</span><span class="id identifier rubyid_id">id</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="char_to_button_id-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.char_to_button_id">permalink</a>
+  
+    .<strong>char_to_button_id</strong>(char)  ⇒ <tt>Integer?</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("char_to_button_id-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Echar_to_button_id">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the button that usually produces a character, if any.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">char</span>
+      
+      
+        <span class="type">(<tt>String</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the character to query.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer?</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the button that usually produces the character.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#button_id_to_char-class_method" title="Gosu.button_id_to_char (method)">button_id_to_char</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#text_input-instance_method" title="Gosu::Window#text_input (method)">Gosu::Window#text_input</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/TextInput" title="Gosu::TextInput (class)">TextInput</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1142">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1142</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_char_to_button_id">char_to_button_id</span><span class="lparen">(</span><span class="id identifier rubyid_char">char</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clip_to-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.clip_to">permalink</a>
+  
+    .<strong>clip_to</strong>(x, y, w, h) { ... } ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("clip_to-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eclip_to">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Masks the drawing area inside the block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the top left corner,.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the top left corner.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">w</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the width of the clipping area.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">h</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the height of the clipping area.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>rendering code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1024">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1024</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1024</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_clip_to">clip_to</span><span class="lparen">(</span><span class="id identifier rubyid_x">x</span><span class="comma">,</span> <span class="id identifier rubyid_y">y</span><span class="comma">,</span> <span class="id identifier rubyid_w">w</span><span class="comma">,</span> <span class="id identifier rubyid_h">h</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="default_font_name-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.default_font_name">permalink</a>
+  
+    .<strong>default_font_name</strong>  ⇒ <tt>String</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("default_font_name-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Edefault_font_name">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the name of a neutral font that is available on the current
+platform.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>String</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the name of a neutral font that is available on the current platform.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Font" title="Gosu::Font (class)">Font</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#from_text-class_method" title="Gosu::Image.from_text (method)">Gosu::Image.from_text</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1198">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1198</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1198</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_default_font_name">default_font_name</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="distance-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.distance">permalink</a>
+  
+    .<strong>distance</strong>(x1, y1, x2, y2)  ⇒ <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("distance-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Edistance">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the distance from (x1, y1) to (x2, y2).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the distance from (x1, y1) to (x2, y2).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1182">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1182</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1182</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_distance">distance</span><span class="lparen">(</span><span class="id identifier rubyid_x1">x1</span><span class="comma">,</span> <span class="id identifier rubyid_y1">y1</span><span class="comma">,</span> <span class="id identifier rubyid_x2">x2</span><span class="comma">,</span> <span class="id identifier rubyid_y2">y2</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="draw_line-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.draw_line">permalink</a>
+  
+    .<strong>draw_line</strong>(x1, y1, c1, x2, y2, c2, z = 0, mode = :default)  ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("draw_line-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Edraw_line">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>OpenGL lines are not reliable at all and may have a missing pixel at the
+start or end point. Relying on your machine's behavior can only end in
+tears. Recommended for debugging purposes only.</p>
+</div>
+  </div>
+
+<p class="note returns_void">This method returns an undefined value.</p>
+<p>Draws a line from one point to another—inconsistently.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the start point.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the start point.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c1</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the start point.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the end point.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the end point.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c2</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the end point.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">z</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the Z-order.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">mode</span>
+      
+      
+        <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:default</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the blending mode to use.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_triangle-class_method" title="Gosu.draw_triangle (method)">draw_triangle</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_quad-class_method" title="Gosu.draw_quad (method)">draw_quad</a></span></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L914">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+914</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 914</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw_line">draw_line</span><span class="lparen">(</span><span class="id identifier rubyid_x1">x1</span><span class="comma">,</span> <span class="id identifier rubyid_y1">y1</span><span class="comma">,</span> <span class="id identifier rubyid_c1">c1</span><span class="comma">,</span> <span class="id identifier rubyid_x2">x2</span><span class="comma">,</span> <span class="id identifier rubyid_y2">y2</span><span class="comma">,</span> <span class="id identifier rubyid_c2">c2</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="op">=</span><span class="int">0</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="draw_quad-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.draw_quad">permalink</a>
+  
+    .<strong>draw_quad</strong>(x1, y1, c1, x2, y2, c2, x3, y3, c3, x4, y4, c4, z = 0, mode = :default)  ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("draw_quad-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Edraw_quad">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Draws a quad (actually two triangles).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the first vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the first vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c1</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the first vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the second vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the second vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c2</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the second vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x3</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the third vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y3</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the third vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c3</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the third vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x4</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the fourth vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y4</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the fourth vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c4</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the fourth vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">z</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the Z-order.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">mode</span>
+      
+      
+        <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:default</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the blending mode to use.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_line-class_method" title="Gosu.draw_line (method)">draw_line</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_triangle-class_method" title="Gosu.draw_triangle (method)">draw_triangle</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_rect-class_method" title="Gosu.draw_rect (method)">draw_rect</a></span></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#order-of-corners" target="_parent" title="The order of corners explained in the Gosu Wiki">The order of corners explained in the Gosu Wiki</a></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L984">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+984</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 984</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw_quad">draw_quad</span><span class="lparen">(</span><span class="id identifier rubyid_x1">x1</span><span class="comma">,</span> <span class="id identifier rubyid_y1">y1</span><span class="comma">,</span> <span class="id identifier rubyid_c1">c1</span><span class="comma">,</span> <span class="id identifier rubyid_x2">x2</span><span class="comma">,</span> <span class="id identifier rubyid_y2">y2</span><span class="comma">,</span> <span class="id identifier rubyid_c2">c2</span><span class="comma">,</span> <span class="id identifier rubyid_x3">x3</span><span class="comma">,</span> <span class="id identifier rubyid_y3">y3</span><span class="comma">,</span> <span class="id identifier rubyid_c3">c3</span><span class="comma">,</span> <span class="id identifier rubyid_x4">x4</span><span class="comma">,</span> <span class="id identifier rubyid_y4">y4</span><span class="comma">,</span> <span class="id identifier rubyid_c4">c4</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="op">=</span><span class="int">0</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="draw_rect-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.draw_rect">permalink</a>
+  
+    .<strong>draw_rect</strong>(x, y, width, height, c, z = 0, mode = :default)  ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("draw_rect-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Edraw_rect">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Draws a rectangle (actually a quad, or two triangles).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the rectangle’s top left corner.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the rectangle’s top left corner.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">width</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the width of the rectangle.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">height</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the height of the rectangle.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the rectangle.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">z</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the Z-order.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">mode</span>
+      
+      
+        <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:default</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the blending mode to use.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_line-class_method" title="Gosu.draw_line (method)">draw_line</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_triangle-class_method" title="Gosu.draw_triangle (method)">draw_triangle</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_quad-class_method" title="Gosu.draw_quad (method)">draw_quad</a></span></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#order-of-corners" target="_parent" title="The order of corners explained in the Gosu Wiki">The order of corners explained in the Gosu Wiki</a></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L957">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+957</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 957</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw_rect">draw_rect</span><span class="lparen">(</span><span class="id identifier rubyid_x">x</span><span class="comma">,</span> <span class="id identifier rubyid_y">y</span><span class="comma">,</span> <span class="id identifier rubyid_width">width</span><span class="comma">,</span> <span class="id identifier rubyid_height">height</span><span class="comma">,</span> <span class="id identifier rubyid_c">c</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="op">=</span><span class="int">0</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="draw_triangle-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.draw_triangle">permalink</a>
+  
+    .<strong>draw_triangle</strong>(x1, y1, c1, x2, y2, c2, x3, y3, c3, z = 0, mode = :default)  ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("draw_triangle-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Edraw_triangle">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Draws a triangle.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the first vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the first vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c1</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the first vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the second vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the second vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c2</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the second vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">x3</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the third vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y3</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the third vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">c3</span>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the color of the third vertex.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">z</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the Z-order.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">mode</span>
+      
+      
+        <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:default</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the blending mode to use.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_line-class_method" title="Gosu.draw_line (method)">draw_line</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_rect-class_method" title="Gosu.draw_rect (method)">draw_rect</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_quad-class_method" title="Gosu.draw_quad (method)">draw_quad</a></span></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+    
+      <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L937">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+937</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 937</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw_triangle">draw_triangle</span><span class="lparen">(</span><span class="id identifier rubyid_x1">x1</span><span class="comma">,</span> <span class="id identifier rubyid_y1">y1</span><span class="comma">,</span> <span class="id identifier rubyid_c1">c1</span><span class="comma">,</span> <span class="id identifier rubyid_x2">x2</span><span class="comma">,</span> <span class="id identifier rubyid_y2">y2</span><span class="comma">,</span> <span class="id identifier rubyid_c2">c2</span><span class="comma">,</span> <span class="id identifier rubyid_x3">x3</span><span class="comma">,</span> <span class="id identifier rubyid_y3">y3</span><span class="comma">,</span> <span class="id identifier rubyid_c3">c3</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="op">=</span><span class="int">0</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="flush-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.flush">permalink</a>
+  
+    .<strong>flush</strong>  ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("flush-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eflush">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Flushes all drawing operations to OpenGL so that Z-ordering can start anew.
+This is useful for drawing multiple layers that may not have knowledge of
+each other's Z-ordering, e.g., drawing a HUD on top of the game world
+or ensuring that a custom cursor is always drawn above everything else.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L993">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+993</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 993</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_flush">flush</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fps-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.fps">permalink</a>
+  
+    .<strong>fps</strong>  ⇒ <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("fps-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Efps">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the current framerate, in frames per second.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the current framerate, in frames per second.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1192">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1192</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1192</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_fps">fps</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="gl-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.gl">permalink</a>
+  
+    .<strong>gl</strong>(z = nil) { ... } ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("gl-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Egl">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>Gosu does not provide access to the underlying OpenGL APIs. A gem like
+ruby-opengl is required to use custom OpenGL drawing code.</p>
+</div>
+  </div>
+
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>Gosu rendering functions MUST NOT be used within the block, and <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#gl-class_method" title="Gosu.gl (method)">gl</a></span> MUST
+be used only within the call tree of <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span>.</p>
+</div>
+  </div>
+
+<p class="note returns_void">This method returns an undefined value.</p>
+<p>Runs the block in a clean OpenGL environment.</p>
+
+<p>If a Z-order is given, the block will be scheduled to run between Gosu
+drawing operations as normal; otherwise, all prior drawing operations will
+be flushed and the block will be executed immediately.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">z</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the Z-order.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>OpenGL code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+      <li><a href="https://www.rubydoc.info/github/gosu/gosu/file/reference/Z-Ordering" title="Z-Ordering">Z-Ordering</a></li>
+    
+      <li><a href="https://www.rubydoc.info/github/gosu/gosu/file/examples/OpenGLIntegration.rb" title="OpenGLIntegration">OpenGLIntegration</a></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1011">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1011</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1011</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_gl">gl</span><span class="lparen">(</span><span class="id identifier rubyid_z">z</span><span class="op">=</span><span class="kw">nil</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="language-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.language">permalink</a>
+  
+    .<strong>language</strong>  ⇒ <tt>String</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("language-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Elanguage">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the language code for the user's preferred language. Expect
+return values such as 'en_US', 'de_DE.UTF-8', 'ja',
+'zh-Hans', etc. You can rely only the first two letters being a
+language abbreviation.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>String</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the user's preferred language.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1222">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1222</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1222</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_language">language</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="milliseconds-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.milliseconds">permalink</a>
+  
+    .<strong>milliseconds</strong>  ⇒ <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("milliseconds-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Emilliseconds">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>For long-running games, this counter will eventually wrap around to 0
+again.</p>
+</div>
+  </div>
+
+
+<p>Returns the number of milliseconds elapsed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the number of milliseconds elapsed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1188">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1188</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1188</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_milliseconds">milliseconds</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="offset_x-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.offset_x">permalink</a>
+  
+    .<strong>offset_x</strong>(theta, r)  ⇒ <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("offset_x-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eoffset_x">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the X component of a vector of angle theta and magnitude r, or the
+horizontal distance covered by moving r pixels in the direction given by
+theta.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">theta</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">r</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X component of a vector of angle theta and magnitude r, or the
+horizontal distance covered by moving r pixels in the direction given by
+theta.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1154">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1154</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1154</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_offset_x">offset_x</span><span class="lparen">(</span><span class="id identifier rubyid_theta">theta</span><span class="comma">,</span> <span class="id identifier rubyid_r">r</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="offset_y-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.offset_y">permalink</a>
+  
+    .<strong>offset_y</strong>(theta, r)  ⇒ <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("offset_y-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Eoffset_y">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the Y component of a vector of angle theta and magnitude r, or the
+vertical distance covered by moving r pixels in the direction given by
+theta.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">theta</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">r</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y component of a vector of angle theta and magnitude r, or the vertical
+distance covered by moving r pixels in the direction given by theta.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1160">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1160</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_offset_y">offset_y</span><span class="lparen">(</span><span class="id identifier rubyid_theta">theta</span><span class="comma">,</span> <span class="id identifier rubyid_r">r</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="random-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.random">permalink</a>
+  
+    .<strong>random</strong>(min, max)  ⇒ <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("random-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Erandom">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a random number in the range [min; max).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">min</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the minimum value, inclusive.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">max</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the maximum value, exclusive.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>a random number in the range [min; max).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1148">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1148</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1148</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_random">random</span><span class="lparen">(</span><span class="id identifier rubyid_min">min</span><span class="comma">,</span> <span class="id identifier rubyid_max">max</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="record-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.record">permalink</a>
+  
+    .<strong>record</strong>(width, height) { ... } ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span></tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("record-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Erecord">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>Because the returned object is not a true image—it's implemented using
+vertex buffers and is not backed by a texture—there are restrictions on how
+it can be used.</p>
+</div>
+  </div>
+
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class="inline">
+<p>The width and height of the returned object will be the same values you
+passed to <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#record-class_method" title="Gosu.record (method)">record</a></span>, regardless of the area you draw on. It is important to
+pass accurate values if you plan on using <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw_as_quad-instance_method" title="Gosu::Image#draw_as_quad (method)">Gosu::Image#draw_as_quad</a></span> or
+<span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw_rot-instance_method" title="Gosu::Image#draw_rot (method)">Gosu::Image#draw_rot</a></span> with the result later.</p>
+</div>
+  </div>
+
+
+<p>Records all drawing operations inside the block as a reusable “image”. This
+method can be used to speed rendering of multiple static images, e.g., a
+fixed tile map.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">width</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the width of the recorded image.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">height</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the height of the recorded image.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>rendering code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span></tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the recorded drawing operations.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1040">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1040</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1040</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_record">record</span><span class="lparen">(</span><span class="id identifier rubyid_width">width</span><span class="comma">,</span> <span class="id identifier rubyid_height">height</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rotate-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.rotate">permalink</a>
+  
+    .<strong>rotate</strong>(angle, around_x = 0, around_y = 0) { ... } ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("rotate-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Erotate">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Rotates all drawing operations inside the block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">angle</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the rotation angle.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">around_x</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the rotation origin.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">around_y</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the rotation origin.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>rendering code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#scale-class_method" title="Gosu.scale (method)">scale</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#translate-class_method" title="Gosu.translate (method)">translate</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#transform-class_method" title="Gosu.transform (method)">transform</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1055">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1055</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1055</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_rotate">rotate</span><span class="lparen">(</span><span class="id identifier rubyid_angle">angle</span><span class="comma">,</span> <span class="id identifier rubyid_around_x">around_x</span><span class="op">=</span><span class="int">0</span><span class="comma">,</span> <span class="id identifier rubyid_around_y">around_y</span><span class="op">=</span><span class="int">0</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scale-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.scale">permalink</a>
+  
+    
+      <span class="overload">.<strong>scale</strong>(scale_x, scale_y = scale_x)  ⇒ <tt>void</tt> </span>
+    
+      <span class="overload">.<strong>scale</strong>(scale_x, scale_y, around_x, around_y)  ⇒ <tt>void</tt> </span>
+    
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("scale-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Escale">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Scales all drawing operations inside the block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">scale_x</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the horizontal scaling factor.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">scale_y</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the vertical scaling factor.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">around_x</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X coordinate of the scaling origin.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">around_y</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y coordinate of the scaling origin.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>rendering code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#rotate-class_method" title="Gosu.rotate (method)">rotate</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#translate-class_method" title="Gosu.translate (method)">translate</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#transform-class_method" title="Gosu.transform (method)">transform</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1074">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1074</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1074</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_scale">scale</span><span class="lparen">(</span><span class="id identifier rubyid_scale_x">scale_x</span><span class="comma">,</span> <span class="id identifier rubyid_scale_y">scale_y</span><span class="comma">,</span> <span class="id identifier rubyid_around_x">around_x</span><span class="comma">,</span> <span class="id identifier rubyid_around_y">around_y</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="screen_height-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.screen_height">permalink</a>
+  
+    .<strong>screen_height</strong>  ⇒ <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("screen_height-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Escreen_height">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the height (in pixels) of the user's primary screen.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the height (in pixels) of the user's primary screen.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1205">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1205</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1205</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_screen_height">screen_height</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="screen_width-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.screen_width">permalink</a>
+  
+    .<strong>screen_width</strong>  ⇒ <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("screen_width-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Escreen_width">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the width (in pixels) of the user's primary screen.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class="type">(<tt>Integer</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the width (in pixels) of the user's primary screen.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1202">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1202</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1202</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_screen_width">screen_width</span><span class="lparen">(</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="transform-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.transform">permalink</a>
+  
+    .<strong>transform</strong>(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15) { ... } ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("transform-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Etransform">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Applies a free-form matrix transformation to everything drawn in the block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">m0</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m1</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m2</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m3</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m4</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m5</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m6</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m7</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m8</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m9</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m10</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m11</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m12</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m13</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m14</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">m15</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>rendering code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#rotate-class_method" title="Gosu.rotate (method)">rotate</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#scale-class_method" title="Gosu.scale (method)">scale</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#translate-class_method" title="Gosu.translate (method)">translate</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1116">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1116</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_transform">transform</span><span class="lparen">(</span><span class="id identifier rubyid_m0">m0</span><span class="comma">,</span> <span class="id identifier rubyid_m1">m1</span><span class="comma">,</span> <span class="id identifier rubyid_m2">m2</span><span class="comma">,</span> <span class="id identifier rubyid_m3">m3</span><span class="comma">,</span> <span class="id identifier rubyid_m4">m4</span><span class="comma">,</span> <span class="id identifier rubyid_m5">m5</span><span class="comma">,</span> <span class="id identifier rubyid_m6">m6</span><span class="comma">,</span> <span class="id identifier rubyid_m7">m7</span><span class="comma">,</span> <span class="id identifier rubyid_m8">m8</span><span class="comma">,</span> <span class="id identifier rubyid_m9">m9</span><span class="comma">,</span> <span class="id identifier rubyid_m10">m10</span><span class="comma">,</span> <span class="id identifier rubyid_m11">m11</span><span class="comma">,</span> <span class="id identifier rubyid_m12">m12</span><span class="comma">,</span> <span class="id identifier rubyid_m13">m13</span><span class="comma">,</span> <span class="id identifier rubyid_m14">m14</span><span class="comma">,</span> <span class="id identifier rubyid_m15">m15</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="translate-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu.translate">permalink</a>
+  
+    .<strong>translate</strong>(x, y) { ... } ⇒ <tt>void</tt> 
+  
+
+  
+
+  
+</h3><script>
+$(document.getElementById("translate-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2Etranslate">permalink</a>');
+</script>
+<div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Offsets all drawing operations inside the block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class="name">x</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the X offset.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class="name">y</span>
+      
+      
+        <span class="type">(<tt>Float</tt>)</span>
+      
+      
+      
+        —
+        <div class="inline">
+<p>the Y offset.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class="type"></span>
+      
+      
+      
+        
+        <div class="inline">
+<p>rendering code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Window#draw-instance_method" title="Gosu::Window#draw (method)">Gosu::Window#draw</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#rotate-class_method" title="Gosu.rotate (method)">rotate</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#scale-class_method" title="Gosu.scale (method)">scale</a></span></li>
+    
+      <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#transform-class_method" title="Gosu.transform (method)">transform</a></span></li>
+    
+  </ul>
+
+</div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L1088">View on GitHub</a>]<table class="source_code">
+  <tbody><tr>
+    <td>
+      <pre class="lines">
+
+1088</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 1088</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_translate">translate</span><span class="lparen">(</span><span class="id identifier rubyid_x">x</span><span class="comma">,</span> <span class="id identifier rubyid_y">y</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Jul 27 20:20:01 2018 by
+  <a href="http://yardoc.org/" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.15 (ruby-2.3.1).
+</div>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-7172246-5', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+
+    </div>
+  
+</body></html>

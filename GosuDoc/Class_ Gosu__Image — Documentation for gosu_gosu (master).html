@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://www.rubydoc.info/github/gosu/gosu/Gosu/Image -->
+<html class="gr__rubydoc_info">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Gosu::Image — Documentation for gosu
+
+  </title>
+
+  <link rel="stylesheet" href="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/style.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/common.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/custom.css" type="text/css" charset="utf-8">
+
+  <script async="" src="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/analytics.js"></script>
+  <script type="text/javascript" charset="utf-8">
+pathId = "Gosu::Image"
+relpath = '/';
+docsPrefix = '/github/gosu/gosu';
+listPrefix = '/list/github/gosu/gosu';
+searchPrefix = '/search/github/gosu/gosu';
+
+  </script>
+
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/autocomplete.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/rubydoc_custom.js"></script>
+
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <div class="nav_wrap">
+    <iframe id="nav" src="./Class_ Gosu__Image — Documentation for gosu_gosu (master)_files/class.html"></iframe>
+    <div id="resizer"></div>
+  </div>
+
+  <div id="main" tabindex="-1">
+    <div id="header">
+      <form class="search" method="get" action="https://www.rubydoc.info/search/github/gosu/gosu">
+        <input name="q" type="search" placeholder="Search" id="search_box" size="30" value="" autocomplete="off" class="ac_input">
+      </form>
+      <script type="text/javascript" charset="utf-8">
+$(function() {
+  $('#search_box').autocomplete($('#search_box').parent().attr('action'), {
+    width: 200,
+    formatItem: function(item) {
+      var values = item[0].split(",");
+      return values[0] + (values[1] == '' ? "" : " <small>(" + values[1] + ")</small>");
+    }
+  }).result(function(event, item) {
+    var values = item[0].split(",")
+    $('#search_box').val(values[1]);
+    location.href = values[3];
+    return false;
+  });
+});
+
+      </script>
+
+      <div id="menu">
+
+        <a href="https://www.rubydoc.info/github" target="_top">Libraries</a> »
+        <span class="title">gosu/gosu <small>(master)</small></span> »
+        <a href="https://www.rubydoc.info/github/gosu/gosu/index">Index (I)</a> »
+        <span class="title"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span>
+        »
+        <span class="title">Image</span>
+
+      </div>
+
+      <div id="search">
+
+        <a class="full_list_link" id="class_list_link" href="https://www.rubydoc.info/list/github/gosu/gosu/class">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="content">
+      <h1>Class: Gosu::Image
+
+
+
+</h1>
+      <div class="box_info">
+
+        <dl>
+          <dt>Inherits:</dt>
+          <dd>
+            <span class="inheritName">Object</span>
+
+            <ul class="fullTree">
+              <li>Object</li>
+
+              <li class="next">Gosu::Image</li>
+
+            </ul>
+            <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="inheritanceTree">show all</a>
+
+          </dd>
+        </dl>
+
+
+
+
+
+
+
+
+
+
+        <dl>
+          <dt>Defined in:</dt>
+          <dd>rdoc/gosu.rb</dd>
+        </dl>
+
+      </div>
+
+      <h2>Overview</h2>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>Provides functionality for drawing rectangular images.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div>
+
+
+
+      <h2>Instance Attribute Summary <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="summary_toggle">collapse</a></small></h2>
+      <ul class="summary">
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#height-instance_method" title="#height (instance method)">#<strong>height</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+          <span class="note title readonly">readonly</span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The image's height, in pixels.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#width-instance_method" title="#width (instance method)">#<strong>width</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+          <span class="note title readonly">readonly</span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The image's width, in pixels.</p>
+</div></span>
+
+        </li>
+
+
+      </ul>
+
+
+
+
+
+      <h2>
+      Creating and loading images
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+      <ul class="summary">
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#from_text-class_method" title="from_text (class method)">.<strong>from_text</strong>(text, line_height, options = {})  ⇒ Gosu::Image </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Creates a reusable image from one or more lines of text.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#load_tiles-class_method" title="load_tiles (class method)">.<strong>load_tiles</strong>(source, tile_width, tile_height, options = {})  ⇒ Array&lt;Gosu::Image&gt; </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Loads an image from a file or an RMagick image, then divides the image into
+an array of equal-sized tiles.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(source, options = {})  ⇒ Image </a>
+
+
+
+  </span>
+
+
+          <span class="note title constructor">constructor</span>
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Loads an image from a file or an RMagick image.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#subimage-instance_method" title="#subimage (instance method)">#<strong>subimage</strong>(left, top, width, height)  ⇒ Image? </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Returns an image that is a smaller, rectangular view of this <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span>.</p>
+    </div>
+    </span>
+
+    </li>
+
+
+    </ul>
+
+    <h2>
+      Drawing an image
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw-instance_method" title="#draw (instance method)">#<strong>draw</strong>(x, y, z, scale_x = 1, scale_y = 1, color = 0xff_ffffff, mode = :default)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Draws the image with its top left corner at (x, y).</p>
+</div></span>
+
+      </li>
+
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw_as_quad-instance_method" title="#draw_as_quad (instance method)">#<strong>draw_as_quad</strong>(x1, y1, c1, x2, y2, c2, x3, y3, c3, x4, y4, c4, z, mode = :default)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Draws the image as an arbitrary quad.</p>
+</div></span>
+
+      </li>
+
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw_rot-instance_method" title="#draw_rot (instance method)">#<strong>draw_rot</strong>(x, y, z, angle, center_x = 0.5, center_y = 0.5, scale_x = 1, scale_y = 1, color = 0xff_ffffff, mode = :default)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Draws the image rotated, with its rotational center at (x, y).</p>
+</div></span>
+
+      </li>
+
+
+    </ul>
+
+    <h2>
+      Instance Method Summary
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#gl_tex_info-instance_method" title="#gl_tex_info (instance method)">#<strong>gl_tex_info</strong>  ⇒ Gosu::GLTexInfo? </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Returns an object that holds information about the underlying OpenGL
+texture and UV coordinates of the image.</p>
+</div></span>
+
+      </li>
+
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#insert-instance_method" title="#insert (instance method)">#<strong>insert</strong>(source, x, y)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Overwrites part of the image with the contents of another.</p>
+</div></span>
+
+      </li>
+
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#save-instance_method" title="#save (instance method)">#<strong>save</strong>(filename)  ⇒ void </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Saves the image to a file.</p>
+</div></span>
+
+      </li>
+
+
+      <li class="public ">
+        <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#to_blob-instance_method" title="#to_blob (instance method)">#<strong>to_blob</strong>  ⇒ String </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+        <span class="summary_desc"><div class="inline">
+<p>Returns the associated texture contents as binary string of packed RGBA
+values, useful for use with RMagick (Magick::Image.from_blob).</p>
+</div></span>
+
+      </li>
+
+
+    </ul>
+
+
+    <div id="constructor_details" class="method_details_list">
+      <h2>Constructor Details</h2>
+
+      <div class="method_details first">
+        <h3 class="signature first" id="initialize-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:initialize">permalink</a>
+
+
+      <span class="overload">#<strong>initialize</strong>(source, options = {})  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span></tt> </span>
+
+      <span class="overload">#<strong>initialize</strong>(window, source, tileable = false)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span></tt> </span>
+
+      <span class="overload">#<strong>initialize</strong>(window, source, tileable, left, top, width, height)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span></tt> </span>
+
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("initialize-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:initialize">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <div class="note notetag">
+              <strong>Note:</strong>
+              <div class="inline">
+                <p>For Windows Bitmap (BMP) images, magenta (FF00FF, often called “magic pink” in this context) is treated as a chroma key and all pixels of that color are automatically rendered fully transparent.</p>
+              </div>
+            </div>
+
+
+            <p>Loads an image from a file or an RMagick image.</p>
+
+            <p>(Passing a Window reference is not necessary anymore, please use the first overload from now on.)</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">source</span>
+
+
+              <span class="type">(<tt>String</tt>, <tt>Magick::Image</tt>)</span> —
+              <div class="inline">
+                <p>the filename or RMagick image to load from.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">options</span>
+
+
+              <span class="type">(<tt>Hash</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>{}</tt>)</em>
+
+
+            </li>
+
+          </ul>
+
+
+
+
+
+
+          <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+          <ul class="option">
+
+            <li>
+              <span class="name">:tileable</span>
+              <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>false</tt>
+
+          </span> —
+              <div class="inline">
+                <p>if true, the Image will not have soft edges when scaled</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:retro</span>
+              <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>false</tt>
+
+          </span> —
+              <div class="inline">
+                <p>if true, the image will not be interpolated when it is scaled up or down. When :retro it set, :tileable has no effect.</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:rect</span>
+              <span class="type">(<tt>Array</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>[0</tt>, <tt>0</tt>, <tt>image_width</tt>, <tt>image_height]</tt>
+
+          </span> —
+              <div class="inline">
+                <p>the source rectangle in the image</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#load_tiles-class_method" title="Gosu::Image.load_tiles (method)">load_tiles</a></span></li>
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#from_text-class_method" title="Gosu::Image.from_text (method)">from_text</a></span></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#tileability" target="_parent" title="Tileability explained in the Gosu Wiki">Tileability explained in the Gosu Wiki</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L333">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+333</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 333</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_initialize">initialize</span><span class="lparen">(</span><span class="id identifier rubyid_source">source</span><span class="comma">,</span> <span class="id identifier rubyid_options">options</span> <span class="op">=</span> <span class="lbrace">{</span><span class="rbrace">}</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div id="instance_attr_details" class="attr_details">
+      <h2>Instance Attribute Details</h2>
+
+
+      <span id=""></span>
+      <div class="method_details first">
+        <h3 class="signature first" id="height-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:height">permalink</a>
+
+    #<strong>height</strong>  ⇒ <tt>Integer</tt>  <span class="extras">(readonly)</span>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("height-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:height">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <p>Returns the image's height, in pixels.</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>the image's height, in pixels.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L309">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+309
+310
+311</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 309</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_height">height</span>
+  <span class="ivar">@height</span>
+<span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <span id=""></span>
+      <div class="method_details ">
+        <h3 class="signature " id="width-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:width">permalink</a>
+
+    #<strong>width</strong>  ⇒ <tt>Integer</tt>  <span class="extras">(readonly)</span>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("width-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:width">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <p>Returns the image's width, in pixels.</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>the image's width, in pixels.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L305">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+305
+306
+307</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 305</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_width">width</span>
+  <span class="ivar">@width</span>
+<span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+
+    <div id="class_method_details" class="method_details_list">
+      <h2>Class Method Details</h2>
+
+
+      <div class="method_details first">
+        <h3 class="signature first" id="from_text-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage.from_text">permalink</a>
+
+
+      <span class="overload">.<strong>from_text</strong>(text, line_height, options = {})  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span></tt> </span>
+
+      <span class="overload">.<strong>from_text</strong>(window, text, font_name, line_height)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span></tt> </span>
+
+      <span class="overload">.<strong>from_text</strong>(window, text, font_name, line_height, line_spacing, width, align)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span></tt> </span>
+
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("from_text-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage%2Efrom_text">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <div class="note notetag">
+              <strong>Note:</strong>
+              <div class="inline">
+                <p>The text is always rendered in white. To draw it in a different color, use the color parameter of <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw-instance_method" title="Gosu::Image#draw (method)">#draw</a></span>, et al.</p>
+              </div>
+            </div>
+
+
+            <p>Creates a reusable image from one or more lines of text.</p>
+
+            <p>(Passing a Window reference is not necessary anymore, please use the first overload from now on.)</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">text</span>
+
+
+              <span class="type">(<tt>String</tt>)</span>
+
+
+
+            </li>
+
+            <li>
+
+              <span class="name">line_height</span>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>the line height, in pixels.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">options</span>
+
+
+              <span class="type">(<tt>Hash</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>{}</tt>)</em>
+
+
+            </li>
+
+          </ul>
+
+
+
+
+
+
+
+
+          <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+          <ul class="option">
+
+            <li>
+              <span class="name">:font</span>
+              <span class="type">(<tt>String</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>Gosu::default_font_name</tt>
+
+          </span> —
+              <div class="inline">
+                <p>the name of a system font, or a path to a TrueType Font (TTF) file. A path must contain at least one '/' character to distinguish it from a system font.</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:width</span>
+              <span class="type">(<tt>Integer</tt>)</span>
+              <span class="default">
+
+          </span> —
+              <div class="inline">
+                <p>the width of the image, in pixels. Long lines will be automatically wrapped around to avoid overflow, but overlong words will be truncated. If this option is omitted, lines will not be wrapped, and :align and :spacing will be ignored as well.</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:spacing</span>
+              <span class="type">(<tt>Integer</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>0</tt>
+
+          </span> —
+              <div class="inline">
+                <p>the spacing between lines, in pixels.</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:align</span>
+              <span class="type">(<tt>:left</tt>, <tt>:right</tt>, <tt>:center</tt>, <tt>:justify</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>:left</tt>
+
+          </span> —
+              <div class="inline">
+                <p>the text alignment.</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:retro</span>
+              <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>false</tt>
+
+          </span> —
+              <div class="inline">
+                <p>if true, the image will not be interpolated when it is scaled up or down.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span></tt>)</span>
+
+
+
+            </li>
+
+          </ul>
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Font" title="Gosu::Font (class)">Font</a></span></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L358">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+358</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 358</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_from_text">from_text</span><span class="lparen">(</span><span class="id identifier rubyid_text">text</span><span class="comma">,</span> <span class="id identifier rubyid_line_height">line_height</span><span class="comma">,</span> <span class="id identifier rubyid_options">options</span> <span class="op">=</span> <span class="lbrace">{</span><span class="rbrace">}</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="load_tiles-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage.load_tiles">permalink</a>
+
+
+      <span class="overload">.<strong>load_tiles</strong>(source, tile_width, tile_height, options = {})  ⇒ <tt>Array&lt;<span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span>&gt;</tt> </span>
+
+      <span class="overload">.<strong>load_tiles</strong>(window, source, tile_width, tile_height, tileable)  ⇒ <tt>Array&lt;<span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span>&gt;</tt> </span>
+
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("load_tiles-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage%2Eload_tiles">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <div class="note notetag">
+              <strong>Note:</strong>
+              <div class="inline">
+                <p>For Windows Bitmap (BMP) images, magenta (FF00FF, often called “magic pink” in this context) is treated as a chroma key and all pixels of that color are automatically rendered fully transparent.</p>
+              </div>
+            </div>
+
+
+            <p>Loads an image from a file or an RMagick image, then divides the image into an array of equal-sized tiles.</p>
+
+            <p>(Passing a Window reference is not necessary anymore, please use the first overload from now on.)</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">source</span>
+
+
+              <span class="type">(<tt>String</tt>, <tt>Magick::Image</tt>)</span>
+
+
+
+            </li>
+
+            <li>
+
+              <span class="name">tile_width</span>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>If positive, this is the width of the individual tiles; if negative, the image is divided into -tile_width columns.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">tile_height</span>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>If positive, this is the height of the individual tiles; if negative, the image is divided into -tile_height rows.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">options</span>
+
+
+              <span class="type">(<tt>Hash</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>{}</tt>)</em>
+
+
+            </li>
+
+          </ul>
+
+
+
+
+
+
+
+
+
+
+          <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+          <ul class="option">
+
+            <li>
+              <span class="name">:tileable</span>
+              <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>false</tt>
+
+          </span> —
+              <div class="inline">
+                <p>if true, the Image will not have soft edges when scaled</p>
+              </div>
+
+            </li>
+
+            <li>
+              <span class="name">:retro</span>
+              <span class="type">(<tt>true</tt>, <tt>false</tt>)</span>
+              <span class="default">
+
+              — default:
+              <tt>false</tt>
+
+          </span> —
+              <div class="inline">
+                <p>if true, the image will not be interpolated when it is scaled up or down. When :retro it set, :tileable has no effect.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt>Array&lt;<span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span>&gt;</tt>)</span>
+
+
+
+            </li>
+
+          </ul>
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#tileability" target="_parent" title="Tileability explained in the Gosu Wiki">Tileability explained in the Gosu Wiki</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L379">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+379</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 379</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_load_tiles">load_tiles</span><span class="lparen">(</span><span class="id identifier rubyid_source">source</span><span class="comma">,</span> <span class="id identifier rubyid_tile_width">tile_width</span><span class="comma">,</span> <span class="id identifier rubyid_tile_height">tile_height</span><span class="comma">,</span> <span class="id identifier rubyid_options">options</span> <span class="op">=</span> <span class="lbrace">{</span><span class="rbrace">}</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div id="instance_method_details" class="method_details_list">
+      <h2>Instance Method Details</h2>
+
+
+      <div class="method_details first">
+        <h3 class="signature first" id="draw-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:draw">permalink</a>
+
+    #<strong>draw</strong>(x, y, z, scale_x = 1, scale_y = 1, color = 0xff_ffffff, mode = :default)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("draw-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:draw">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+            <p class="note returns_void">This method returns an undefined value.</p>
+            <p>Draws the image with its top left corner at (x, y).</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">x</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">z</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Z-order.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">scale_x</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>1</tt>)</em> —
+              <div class="inline">
+                <p>the horizontal scaling factor.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">scale_y</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>1</tt>)</em> —
+              <div class="inline">
+                <p>the vertical scaling factor.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">color</span>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>, <tt>Integer</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>0xff_ffffff</tt>)</em>
+
+
+            </li>
+
+            <li>
+
+              <span class="name">mode</span>
+
+
+              <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>:default</tt>)</em> —
+              <div class="inline">
+                <p>the blending mode to use.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw_rot-instance_method" title="Gosu::Image#draw_rot (method)">#draw_rot</a></span></li>
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw_as_quad-instance_method" title="Gosu::Image#draw_as_quad (method)">#draw_as_quad</a></span></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L413">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+413</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 413</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw">draw</span><span class="lparen">(</span><span class="id identifier rubyid_x">x</span><span class="comma">,</span> <span class="id identifier rubyid_y">y</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="comma">,</span> <span class="id identifier rubyid_scale_x">scale_x</span><span class="op">=</span><span class="int">1</span><span class="comma">,</span> <span class="id identifier rubyid_scale_y">scale_y</span><span class="op">=</span><span class="int">1</span><span class="comma">,</span> <span class="id identifier rubyid_color">color</span><span class="op">=</span><span class="int">0xff_ffffff</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="draw_as_quad-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:draw_as_quad">permalink</a>
+
+    #<strong>draw_as_quad</strong>(x1, y1, c1, x2, y2, c2, x3, y3, c3, x4, y4, c4, z, mode = :default)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("draw_as_quad-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:draw_as_quad">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+            <p class="note returns_void">This method returns an undefined value.</p>
+            <p>Draws the image as an arbitrary quad. This method can be used for advanced non-rectangular drawing techniques, e.g., faking perspective or isometric projection.
+            </p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">x1</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate of the first vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y1</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate of the first vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">c1</span>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+
+
+
+              —
+              <div class="inline">
+                <p>the color of the first vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">x2</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate of the second vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y2</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate of the second vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">c2</span>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+
+
+
+              —
+              <div class="inline">
+                <p>the color of the second vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">x3</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate of the third vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y3</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate of the third vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">c3</span>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+
+
+
+              —
+              <div class="inline">
+                <p>the color of the third vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">x4</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate of the fourth vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y4</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate of the fourth vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">c4</span>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>)</span>
+
+
+
+              —
+              <div class="inline">
+                <p>the color of the fourth vertex.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">z</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Z-order.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">mode</span>
+
+
+              <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>:default</tt>)</em> —
+              <div class="inline">
+                <p>the blending mode to use.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw-instance_method" title="Gosu::Image#draw (method)">#draw</a></span></li>
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu#draw_quad-class_method" title="Gosu.draw_quad (method)">Gosu.draw_quad</a></span></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#order-of-corners" target="_parent" title="The order of corners explained in the Gosu Wiki">The order of corners explained in the Gosu Wiki</a></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L440">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+440</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 440</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw_as_quad">draw_as_quad</span><span class="lparen">(</span><span class="id identifier rubyid_x1">x1</span><span class="comma">,</span> <span class="id identifier rubyid_y1">y1</span><span class="comma">,</span> <span class="id identifier rubyid_c1">c1</span><span class="comma">,</span> <span class="id identifier rubyid_x2">x2</span><span class="comma">,</span> <span class="id identifier rubyid_y2">y2</span><span class="comma">,</span> <span class="id identifier rubyid_c2">c2</span><span class="comma">,</span> <span class="id identifier rubyid_x3">x3</span><span class="comma">,</span> <span class="id identifier rubyid_y3">y3</span><span class="comma">,</span> <span class="id identifier rubyid_c3">c3</span><span class="comma">,</span> <span class="id identifier rubyid_x4">x4</span><span class="comma">,</span> <span class="id identifier rubyid_y4">y4</span><span class="comma">,</span> <span class="id identifier rubyid_c4">c4</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="draw_rot-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:draw_rot">permalink</a>
+
+    #<strong>draw_rot</strong>(x, y, z, angle, center_x = 0.5, center_y = 0.5, scale_x = 1, scale_y = 1, color = 0xff_ffffff, mode = :default)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("draw_rot-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:draw_rot">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+            <p class="note returns_void">This method returns an undefined value.</p>
+            <p>Draws the image rotated, with its rotational center at (x, y).</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">angle</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+
+            </li>
+
+            <li>
+
+              <span class="name">center_x</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>0.5</tt>)</em> —
+              <div class="inline">
+                <p>the relative horizontal rotation origin.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">center_y</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>0.5</tt>)</em> —
+              <div class="inline">
+                <p>the relative vertical rotation origin.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">x</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">z</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span> —
+              <div class="inline">
+                <p>the Z-order.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">scale_x</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>1</tt>)</em> —
+              <div class="inline">
+                <p>the horizontal scaling factor.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">scale_y</span>
+
+
+              <span class="type">(<tt>Float</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>1</tt>)</em> —
+              <div class="inline">
+                <p>the vertical scaling factor.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">color</span>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Gosu::Color</a></span></tt>, <tt>Integer</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>0xff_ffffff</tt>)</em>
+
+
+            </li>
+
+            <li>
+
+              <span class="name">mode</span>
+
+
+              <span class="type">(<tt>:default</tt>, <tt>:additive</tt>)</span>
+
+
+              <em class="default">(defaults to: <tt>:default</tt>)</em> —
+              <div class="inline">
+                <p>the blending mode to use.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#draw-instance_method" title="Gosu::Image#draw (method)">#draw</a></span></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#drawing-with-colours" target="_parent" title="Drawing with colors, explained in the Gosu Wiki">Drawing with colors, explained in the Gosu Wiki</a></li>
+
+            <li><a href="https://github.com/gosu/gosu/wiki/Basic-Concepts#z-ordering" target="_parent" title="Z-ordering explained in the Gosu Wiki">Z-ordering explained in the Gosu Wiki</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L427">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+427</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 427</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_draw_rot">draw_rot</span><span class="lparen">(</span><span class="id identifier rubyid_x">x</span><span class="comma">,</span> <span class="id identifier rubyid_y">y</span><span class="comma">,</span> <span class="id identifier rubyid_z">z</span><span class="comma">,</span> <span class="id identifier rubyid_angle">angle</span><span class="comma">,</span> <span class="id identifier rubyid_center_x">center_x</span><span class="op">=</span><span class="float">0.5</span><span class="comma">,</span> <span class="id identifier rubyid_center_y">center_y</span><span class="op">=</span><span class="float">0.5</span><span class="comma">,</span> <span class="id identifier rubyid_scale_x">scale_x</span><span class="op">=</span><span class="int">1</span><span class="comma">,</span> <span class="id identifier rubyid_scale_y">scale_y</span><span class="op">=</span><span class="int">1</span><span class="comma">,</span> <span class="id identifier rubyid_color">color</span><span class="op">=</span><span class="int">0xff_ffffff</span><span class="comma">,</span> <span class="id identifier rubyid_mode">mode</span><span class="op">=</span><span class="symbol">:default</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="gl_tex_info-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:gl_tex_info">permalink</a>
+
+    #<strong>gl_tex_info</strong>  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/GLTexInfo" title="Gosu::GLTexInfo (class)">Gosu::GLTexInfo</a></span>?</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("gl_tex_info-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:gl_tex_info">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <div class="note notetag">
+              <strong>Note:</strong>
+              <div class="inline">
+                <p>Some images may be too large to fit on a single texture; this method returns nil in those cases.</p>
+              </div>
+            </div>
+
+
+            <p>Returns an object that holds information about the underlying OpenGL texture and UV coordinates of the image.</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/GLTexInfo" title="Gosu::GLTexInfo (class)">Gosu::GLTexInfo</a></span>?</tt>)</span>
+
+
+
+              —
+              <div class="inline">
+                <p>information about the underlying OpenGL texture.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <p class="tag_title">See Also:</p>
+          <ul class="see">
+
+            <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/GLTexInfo" title="Gosu::GLTexInfo (class)">GLTexInfo</a></span></li>
+
+            <li><a href="https://www.rubydoc.info/github/gosu/gosu/file/examples/OpenGLIntegration.rb" title="OpenGLIntegration">OpenGLIntegration</a></li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L453">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+453</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 453</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_gl_tex_info">gl_tex_info</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="insert-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:insert">permalink</a>
+
+    #<strong>insert</strong>(source, x, y)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("insert-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:insert">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+            <p class="note returns_void">This method returns an undefined value.</p>
+            <p>Overwrites part of the image with the contents of another. If the source image is partially out of bounds, it will be clipped to fit.</p>
+
+            <p>This can be used to e.g. overwrite parts of a landscape.</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">source</span>
+
+
+              <span class="type">(<tt>String</tt>, <tt>Magick::Image</tt>)</span> —
+              <div class="inline">
+                <p>the filename or RMagick image to load from.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">x</span>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>the X coordinate of the top left corner.</p>
+              </div>
+
+            </li>
+
+            <li>
+
+              <span class="name">y</span>
+
+
+              <span class="type">(<tt>Integer</tt>)</span> —
+              <div class="inline">
+                <p>the Y coordinate of the top left corner.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L476">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+476</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 476</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_insert">insert</span><span class="lparen">(</span><span class="id identifier rubyid_source">source</span><span class="comma">,</span> <span class="id identifier rubyid_x">x</span><span class="comma">,</span> <span class="id identifier rubyid_y">y</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="save-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:save">permalink</a>
+
+    #<strong>save</strong>(filename)  ⇒ <tt>void</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("save-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:save">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+            <p class="note returns_void">This method returns an undefined value.</p>
+            <p>Saves the image to a file. The file format is determined from the file extension.
+            </p>
+
+            <p>Useful for, e.g., pre-rendering text on a development machine where the necessary fonts are known to be available.</p>
+
+
+          </div>
+        </div>
+        <div class="tags">
+          <p class="tag_title">Parameters:</p>
+          <ul class="param">
+
+            <li>
+
+              <span class="name">filename</span>
+
+
+              <span class="type">(<tt>String</tt>)</span> —
+              <div class="inline">
+                <p>the path to save the file under.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L485">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+485</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 485</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_save">save</span><span class="lparen">(</span><span class="id identifier rubyid_filename">filename</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="subimage-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:subimage">permalink</a>
+
+    #<strong>subimage</strong>(left, top, width, height)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span>?</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("subimage-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:subimage">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <p>Returns an image that is a smaller, rectangular view of this <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span>.</p>
+
+            <p>This is a very fast operation, and no new textures will be allocated. If you update this <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span> or the <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#subimage-instance_method" title="Gosu::Image#subimage (method)">#subimage</a></span> using <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#insert-instance_method" title="Gosu::Image#insert (method)">#insert</a></span>, the other
+              <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Gosu::Image</a></span> will be affected as well.</p>
+
+            <p>Caveats:</p>
+            <ul>
+              <li>
+                <p>If you stretch or rotate a <span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#subimage-instance_method" title="Gosu::Image#subimage (method)">#subimage</a></span>, the pixels adjacent to it might bleed into it, as Gosu does not manage the 'tileability' of subimages.
+                </p>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <div class="tags">
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image" title="Gosu::Image (class)">Image</a></span>?</tt>)</span>
+
+
+
+              —
+              <div class="inline">
+                <p>an image that represents a portion of the containing image</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L391">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+391</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 391</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_subimage">subimage</span><span class="lparen">(</span><span class="id identifier rubyid_left">left</span><span class="comma">,</span> <span class="id identifier rubyid_top">top</span><span class="comma">,</span> <span class="id identifier rubyid_width">width</span><span class="comma">,</span> <span class="id identifier rubyid_height">height</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="method_details ">
+        <h3 class="signature " id="to_blob-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FImage:to_blob">permalink</a>
+
+    #<strong>to_blob</strong>  ⇒ <tt>String</tt>
+
+
+
+
+
+</h3>
+        <script>
+$(document.getElementById("to_blob-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FImage:to_blob">permalink</a>');
+
+        </script>
+        <div class="docstring">
+          <div class="discussion">
+
+            <p>Returns the associated texture contents as binary string of packed RGBA values, useful for use with RMagick (Magick::Image.from_blob).</p>
+
+            <pre class="code ruby"><code class="ruby"><span class="id identifier rubyid_magick_image">magick_image</span> <span class="op">=</span> <span class="const">Magick</span><span class="op">::</span><span class="const">Image</span><span class="period">.</span><span class="id identifier rubyid_from_blob">from_blob</span><span class="lparen">(</span><span class="id identifier rubyid_image">image</span><span class="period">.</span><span class="id identifier rubyid_to_blob">to_blob</span><span class="rparen">)</span> <span class="lbrace">{</span>
+  <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_format">format</span> <span class="op">=</span> <span class="tstring"><span class="tstring_beg">"</span><span class="tstring_content">RGBA</span><span class="tstring_end">"</span></span>
+  <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_size">size</span> <span class="op">=</span> <span class="tstring"><span class="tstring_beg">"</span><span class="embexpr_beg">#{</span><span class="id identifier rubyid_image">image</span><span class="period">.</span><span class="id identifier rubyid_width">width</span><span class="embexpr_end">}</span><span class="tstring_content">x</span><span class="embexpr_beg">#{</span><span class="id identifier rubyid_image">image</span><span class="period">.</span><span class="id identifier rubyid_height">height</span><span class="embexpr_end">}</span><span class="tstring_end">"</span></span>
+  <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_depth">depth</span> <span class="op">=</span> <span class="int">8</span>
+<span class="rbrace">}</span><span class="period">.</span><span class="id identifier rubyid_first">first</span></code></pre>
+
+
+          </div>
+        </div>
+        <div class="tags">
+
+          <p class="tag_title">Returns:</p>
+          <ul class="return">
+
+            <li>
+
+
+              <span class="type">(<tt>String</tt>)</span> —
+              <div class="inline">
+                <p>a binary string of packed RGBA values.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Image#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L465">View on GitHub</a>]
+        <table class="source_code">
+          <tbody>
+            <tr>
+              <td>
+                <pre class="lines">
+
+465</pre>
+              </td>
+              <td>
+                <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 465</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_to_blob">to_blob</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    Generated on Fri Jul 27 21:19:27 2018 by
+    <a href="http://yardoc.org/" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.9.15 (ruby-2.3.1).
+  </div>
+
+
+
+
+  <script>
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-7172246-5', 'auto');
+ga('send', 'pageview');
+
+  </script>
+
+
+  </div>
+
+</body>
+
+</html>

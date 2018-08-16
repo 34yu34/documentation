@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://www.rubydoc.info/github/gosu/gosu/Gosu/Color -->
+<html class="gr__rubydoc_info">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Gosu::Color — Documentation for gosu
+
+  </title>
+
+  <link rel="stylesheet" href="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/style.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/common.css" type="text/css" charset="utf-8">
+
+  <link rel="stylesheet" href="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/custom.css" type="text/css" charset="utf-8">
+
+  <script async="" src="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/analytics.js"></script>
+  <script type="text/javascript" charset="utf-8">
+pathId = "Gosu::Color"
+relpath = '/';
+docsPrefix = '/github/gosu/gosu';
+listPrefix = '/list/github/gosu/gosu';
+searchPrefix = '/search/github/gosu/gosu';
+
+  </script>
+
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/autocomplete.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/rubydoc_custom.js"></script>
+
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <div class="nav_wrap">
+    <iframe id="nav" src="./Class_ Gosu__Color — Documentation for gosu_gosu (master)_files/class.html"></iframe>
+    <div id="resizer"></div>
+  </div>
+
+  <div id="main" tabindex="-1">
+    <div id="header">
+      <form class="search" method="get" action="https://www.rubydoc.info/search/github/gosu/gosu">
+        <input name="q" type="search" placeholder="Search" id="search_box" size="30" value="" autocomplete="off" class="ac_input">
+      </form>
+      <script type="text/javascript" charset="utf-8">
+$(function() {
+  $('#search_box').autocomplete($('#search_box').parent().attr('action'), {
+    width: 200,
+    formatItem: function(item) {
+      var values = item[0].split(",");
+      return values[0] + (values[1] == '' ? "" : " <small>(" + values[1] + ")</small>");
+    }
+  }).result(function(event, item) {
+    var values = item[0].split(",")
+    $('#search_box').val(values[1]);
+    location.href = values[3];
+    return false;
+  });
+});
+
+      </script>
+
+      <div id="menu">
+
+        <a href="https://www.rubydoc.info/github" target="_top">Libraries</a> »
+        <span class="title">gosu/gosu <small>(master)</small></span> »
+        <a href="https://www.rubydoc.info/github/gosu/gosu/index">Index (C)</a> »
+        <span class="title"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span>
+        »
+        <span class="title">Color</span>
+
+      </div>
+
+      <div id="search">
+
+        <a class="full_list_link" id="class_list_link" href="https://www.rubydoc.info/list/github/gosu/gosu/class">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="content">
+      <h1>Class: Gosu::Color
+
+
+
+</h1>
+      <div class="box_info">
+
+        <dl>
+          <dt>Inherits:</dt>
+          <dd>
+            <span class="inheritName">Object</span>
+
+            <ul class="fullTree">
+              <li>Object</li>
+
+              <li class="next">Gosu::Color</li>
+
+            </ul>
+            <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="inheritanceTree">show all</a>
+
+          </dd>
+        </dl>
+
+
+
+
+
+
+
+
+
+
+        <dl>
+          <dt>Defined in:</dt>
+          <dd>rdoc/gosu.rb</dd>
+        </dl>
+
+      </div>
+
+      <h2>Overview</h2>
+      <div class="docstring">
+        <div class="discussion">
+
+          <p>Represents an ARGB color value with 8 bits for each channel. Colors can be used interchangeably with integer literals of the form 0xAARRGGBB in all Gosu APIs.</p>
+
+
+        </div>
+      </div>
+      <div class="tags">
+
+
+      </div>
+
+      <h2>
+      Constant Summary
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+      <dl class="constants">
+
+        <dt id="NONE-constant" class="">NONE =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0x00_000000</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="BLACK-constant" class="">BLACK =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_000000</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="GRAY-constant" class="">GRAY =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_808080</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="WHITE-constant" class="">WHITE =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_ffffff</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="AQUA-constant" class="">AQUA =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_00ffff</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="RED-constant" class="">RED =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_ff0000</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="GREEN-constant" class="">GREEN =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_00ff00</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="BLUE-constant" class="">BLUE =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_0000ff</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="YELLOW-constant" class="">YELLOW =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_ffff00</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="FUCHSIA-constant" class="">FUCHSIA =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_ff00ff</span><span class="rparen">)</span></pre></dd>
+
+        <dt id="CYAN-constant" class="">CYAN =
+
+        </dt>
+        <dd><pre class="code"><span class="const"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu" title="Gosu (module)">Gosu</a></span></span><span class="op">::</span><span class="const">Color</span><span class="period">.</span><span class="id identifier rubyid_argb"><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></span><span class="lparen">(</span><span class="int">0xff_00ffff</span><span class="rparen">)</span></pre></dd>
+
+      </dl>
+
+
+
+
+
+      <h2>Instance Attribute Summary <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="summary_toggle">collapse</a></small></h2>
+      <ul class="summary">
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#alpha-instance_method" title="#alpha (instance method)">#<strong>alpha</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's alpha channel.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#blue-instance_method" title="#blue (instance method)">#<strong>blue</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's blue channel.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#green-instance_method" title="#green (instance method)">#<strong>green</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's green channel.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#hue-instance_method" title="#hue (instance method)">#<strong>hue</strong>  ⇒ Float </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's hue in the range [0.0; 360.0).</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#red-instance_method" title="#red (instance method)">#<strong>red</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's red channel.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#saturation-instance_method" title="#saturation (instance method)">#<strong>saturation</strong>  ⇒ Float </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's saturation in the range [0.0; 1.0].</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#value-instance_method" title="#value (instance method)">#<strong>value</strong>  ⇒ Float </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>The color's value in the range [0.0; 1.0].</p>
+</div></span>
+
+        </li>
+
+
+      </ul>
+
+
+
+
+
+      <h2>
+      Creating colors.
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+      <ul class="summary">
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="argb (class method)">.<strong>argb</strong>(*args)  ⇒ Color </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>This method is equivalent to calling `Color.new`, but the name makes the
+parameter order explicit.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#from_ahsv-class_method" title="from_ahsv (class method)">.<strong>from_ahsv</strong>(a, h, s, v)  ⇒ Color </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Converts an HSV triplet to a color with the alpha channel set to a given
+value.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#from_hsv-class_method" title="from_hsv (class method)">.<strong>from_hsv</strong>(h, s, v)  ⇒ Color </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Converts an HSV triplet to an opaque color.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#rgba-class_method" title="rgba (class method)">.<strong>rgba</strong>(*args)  ⇒ Color </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>A new instance of Color.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(*args)  ⇒ Color </a>
+
+
+
+  </span>
+
+
+          <span class="note title constructor">constructor</span>
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>A new instance of Color.</p>
+</div></span>
+
+        </li>
+
+
+      </ul>
+
+      <h2>
+      Instance Method Summary
+      <small><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+      <ul class="summary">
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#dup-instance_method" title="#dup (instance method)">#<strong>dup</strong>  ⇒ Color </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>A copy of the color.</p>
+</div></span>
+
+        </li>
+
+
+        <li class="public ">
+          <span class="summary_signature">
+
+      <a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#gl-instance_method" title="#gl (instance method)">#<strong>gl</strong>  ⇒ Integer </a>
+
+
+
+  </span>
+
+
+
+
+
+
+
+
+
+          <span class="summary_desc"><div class="inline">
+<p>Returns a 32-bit representation of the color suitable for use with OpenGL
+calls.</p>
+</div></span>
+
+        </li>
+
+
+      </ul>
+
+
+      <div id="constructor_details" class="method_details_list">
+        <h2>Constructor Details</h2>
+
+        <div class="method_details first">
+          <h3 class="signature first" id="initialize-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:initialize">permalink</a>
+
+
+      <span class="overload">#<strong>initialize</strong>(argb)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt> </span>
+
+      <span class="overload">#<strong>initialize</strong>(a, r, g, b)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt> </span>
+
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("initialize-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:initialize">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns a new instance of Color</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Overloads:</p>
+            <ul class="overload">
+
+
+              <li class="overload_item">
+                <span class="signature">#<strong>initialize</strong>(argb)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+                </span>
+                <div class="docstring">
+                  <div class="discussion">
+
+
+                  </div>
+                </div>
+                <div class="tags">
+                  <p class="tag_title">Parameters:</p>
+                  <ul class="param">
+
+                    <li>
+
+                      <span class="name">argb</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>an integer of the form 0xAARRGGBB.</p>
+                      </div>
+
+                    </li>
+
+                  </ul>
+
+
+                </div>
+              </li>
+
+
+              <li class="overload_item">
+                <span class="signature">#<strong>initialize</strong>(a, r, g, b)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+                </span>
+                <div class="docstring">
+                  <div class="discussion">
+
+
+                  </div>
+                </div>
+                <div class="tags">
+                  <p class="tag_title">Parameters:</p>
+                  <ul class="param">
+
+                    <li>
+
+                      <span class="name">a</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's alpha channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <span class="name">r</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's red channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <span class="name">g</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's green channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <span class="name">b</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's blue channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                  </ul>
+
+
+                </div>
+              </li>
+
+            </ul>
+
+
+            <p class="tag_title">See Also:</p>
+            <ul class="see">
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#from_hsv-class_method" title="Gosu::Color.from_hsv (method)">from_hsv</a></span></li>
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#from_ahsv-class_method" title="Gosu::Color.from_ahsv (method)">from_ahsv</a></span></li>
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#rgba-class_method" title="Gosu::Color.rgba (method)">rgba</a></span></li>
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L143">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+143</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 143</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_initialize">initialize</span><span class="lparen">(</span><span class="op">*</span><span class="id identifier rubyid_args">args</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div id="instance_attr_details" class="attr_details">
+        <h2>Instance Attribute Details</h2>
+
+
+        <span id="alpha=-instance_method"></span>
+        <div class="method_details first">
+          <h3 class="signature first" id="alpha-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:alpha">permalink</a>
+
+    #<strong>alpha</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("alpha-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:alpha">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's alpha channel.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Integer</tt>)</span> —
+                <div class="inline">
+                  <p>the color's alpha channel.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L101">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+101
+102
+103</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 101</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_alpha">alpha</span>
+  <span class="ivar">@alpha</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <span id="blue=-instance_method"></span>
+        <div class="method_details ">
+          <h3 class="signature " id="blue-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:blue">permalink</a>
+
+    #<strong>blue</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("blue-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:blue">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's blue channel.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Integer</tt>)</span> —
+                <div class="inline">
+                  <p>the color's blue channel.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L113">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+113
+114
+115</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 113</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_blue">blue</span>
+  <span class="ivar">@blue</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <span id="green=-instance_method"></span>
+        <div class="method_details ">
+          <h3 class="signature " id="green-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:green">permalink</a>
+
+    #<strong>green</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("green-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:green">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's green channel.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Integer</tt>)</span> —
+                <div class="inline">
+                  <p>the color's green channel.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L109">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+109
+110
+111</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 109</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_green">green</span>
+  <span class="ivar">@green</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <span id="hue=-instance_method"></span>
+        <div class="method_details ">
+          <h3 class="signature " id="hue-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:hue">permalink</a>
+
+    #<strong>hue</strong>  ⇒ <tt>Float</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("hue-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:hue">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's hue in the range [0.0; 360.0).</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's hue in the range [0.0; 360.0).</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L117">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+117
+118
+119</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 117</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_hue">hue</span>
+  <span class="ivar">@hue</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <span id="red=-instance_method"></span>
+        <div class="method_details ">
+          <h3 class="signature " id="red-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:red">permalink</a>
+
+    #<strong>red</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("red-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:red">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's red channel.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Integer</tt>)</span> —
+                <div class="inline">
+                  <p>the color's red channel.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L105">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+105
+106
+107</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 105</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_red">red</span>
+  <span class="ivar">@red</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <span id="saturation=-instance_method"></span>
+        <div class="method_details ">
+          <h3 class="signature " id="saturation-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:saturation">permalink</a>
+
+    #<strong>saturation</strong>  ⇒ <tt>Float</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("saturation-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:saturation">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's saturation in the range [0.0; 1.0].</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's saturation in the range [0.0; 1.0].</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L121">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+121
+122
+123</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 121</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_saturation">saturation</span>
+  <span class="ivar">@saturation</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <span id="value=-instance_method"></span>
+        <div class="method_details ">
+          <h3 class="signature " id="value-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:value">permalink</a>
+
+    #<strong>value</strong>  ⇒ <tt>Float</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("value-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:value">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns the color's value in the range [0.0; 1.0].</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's value in the range [0.0; 1.0].</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L125">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+125
+126
+127</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 125</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_value">value</span>
+  <span class="ivar">@value</span>
+<span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+
+      <div id="class_method_details" class="method_details_list">
+        <h2>Class Method Details</h2>
+
+
+        <div class="method_details first">
+          <h3 class="signature first" id="argb-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor.argb">permalink</a>
+
+
+      <span class="overload">.<strong>argb</strong>(argb)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt> </span>
+
+      <span class="overload">.<strong>argb</strong>(a, r, g, b)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt> </span>
+
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("argb-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor%2Eargb">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>This method is equivalent to calling `Color.new`, but the name makes the parameter order explicit.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>)</span>
+
+
+
+                —
+                <div class="inline">
+                  <p>a new instance of Color</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <p class="tag_title">See Also:</p>
+            <ul class="see">
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#initialize-instance_method" title="Gosu::Color#initialize (method)">#initialize</a></span></li>
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#rgba-class_method" title="Gosu::Color.rgba (method)">rgba</a></span></li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L169">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+169</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 169</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_argb">argb</span><span class="lparen">(</span><span class="op">*</span><span class="id identifier rubyid_args">args</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="method_details ">
+          <h3 class="signature " id="from_ahsv-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor.from_ahsv">permalink</a>
+
+    .<strong>from_ahsv</strong>(a, h, s, v)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("from_ahsv-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor%2Efrom_ahsv">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Converts an HSV triplet to a color with the alpha channel set to a given value.
+              </p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+            <p class="tag_title">Parameters:</p>
+            <ul class="param">
+
+              <li>
+
+                <span class="name">a</span>
+
+
+                <span class="type">(<tt>Integer</tt>)</span> —
+                <div class="inline">
+                  <p>the color's opacity in the range [0; 255].</p>
+                </div>
+
+              </li>
+
+              <li>
+
+                <span class="name">h</span>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's hue in the range [0.0; 360.0).</p>
+                </div>
+
+              </li>
+
+              <li>
+
+                <span class="name">s</span>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's saturation in the range [0.0; 1.0].</p>
+                </div>
+
+              </li>
+
+              <li>
+
+                <span class="name">v</span>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's value in the range [0.0; 1.0].</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>)</span>
+
+
+
+                —
+                <div class="inline">
+                  <p>a color corresponding to the HSV triplet.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <p class="tag_title">See Also:</p>
+            <ul class="see">
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#from_hsv-class_method" title="Gosu::Color.from_hsv (method)">from_hsv</a></span></li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L188">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+188</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 188</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_from_ahsv">from_ahsv</span><span class="lparen">(</span><span class="id identifier rubyid_a">a</span><span class="comma">,</span> <span class="id identifier rubyid_h">h</span><span class="comma">,</span> <span class="id identifier rubyid_s">s</span><span class="comma">,</span> <span class="id identifier rubyid_v">v</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="method_details ">
+          <h3 class="signature " id="from_hsv-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor.from_hsv">permalink</a>
+
+    .<strong>from_hsv</strong>(h, s, v)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("from_hsv-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor%2Efrom_hsv">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Converts an HSV triplet to an opaque color.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+            <p class="tag_title">Parameters:</p>
+            <ul class="param">
+
+              <li>
+
+                <span class="name">h</span>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's hue in the range [0.0; 360.0).</p>
+                </div>
+
+              </li>
+
+              <li>
+
+                <span class="name">s</span>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's saturation in the range [0.0; 1.0].</p>
+                </div>
+
+              </li>
+
+              <li>
+
+                <span class="name">v</span>
+
+
+                <span class="type">(<tt>Float</tt>)</span> —
+                <div class="inline">
+                  <p>the color's value in the range [0.0; 1.0].</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>)</span>
+
+
+
+                —
+                <div class="inline">
+                  <p>a color corresponding to the HSV triplet.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <p class="tag_title">See Also:</p>
+            <ul class="see">
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#from_ahsv-class_method" title="Gosu::Color.from_ahsv (method)">from_ahsv</a></span></li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L179">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+179</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 179</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_from_hsv">from_hsv</span><span class="lparen">(</span><span class="id identifier rubyid_h">h</span><span class="comma">,</span> <span class="id identifier rubyid_s">s</span><span class="comma">,</span> <span class="id identifier rubyid_v">v</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="method_details ">
+          <h3 class="signature " id="rgba-class_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor.rgba">permalink</a>
+
+
+      <span class="overload">.<strong>rgba</strong>(rgba)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt> </span>
+
+      <span class="overload">.<strong>rgba</strong>(r, g, b, a)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt> </span>
+
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("rgba-class_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor%2Ergba">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns a new instance of Color</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Overloads:</p>
+            <ul class="overload">
+
+
+              <li class="overload_item">
+                <span class="signature">.<strong>rgba</strong>(rgba)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+                </span>
+                <div class="docstring">
+                  <div class="discussion">
+
+
+                  </div>
+                </div>
+                <div class="tags">
+                  <p class="tag_title">Parameters:</p>
+                  <ul class="param">
+
+                    <li>
+
+                      <span class="name">argb</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>an integer of the form 0xRRGGBBAA.</p>
+                      </div>
+
+                    </li>
+
+                  </ul>
+
+
+                </div>
+              </li>
+
+
+              <li class="overload_item">
+                <span class="signature">.<strong>rgba</strong>(r, g, b, a)  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+                </span>
+                <div class="docstring">
+                  <div class="discussion">
+
+
+                  </div>
+                </div>
+                <div class="tags">
+                  <p class="tag_title">Parameters:</p>
+                  <ul class="param">
+
+                    <li>
+
+                      <span class="name">a</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's alpha channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <span class="name">r</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's red channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <span class="name">g</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's green channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <span class="name">b</span>
+
+
+                      <span class="type">(<tt>Integer</tt>)</span> —
+                      <div class="inline">
+                        <p>the color's blue channel in the range [0; 255].</p>
+                      </div>
+
+                    </li>
+
+                  </ul>
+
+
+                </div>
+              </li>
+
+            </ul>
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>)</span>
+
+
+
+                —
+                <div class="inline">
+                  <p>a new instance of Color</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <p class="tag_title">See Also:</p>
+            <ul class="see">
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#initialize-instance_method" title="Gosu::Color#initialize (method)">#initialize</a></span></li>
+
+              <li><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#argb-class_method" title="Gosu::Color.argb (method)">argb</a></span></li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L159">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+159</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 159</span>
+
+<span class="kw">def</span> <span class="kw">self</span><span class="period">.</span><span class="id identifier rubyid_rgba">rgba</span><span class="lparen">(</span><span class="op">*</span><span class="id identifier rubyid_args">args</span><span class="rparen">)</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div id="instance_method_details" class="method_details_list">
+        <h2>Instance Method Details</h2>
+
+
+        <div class="method_details first">
+          <h3 class="signature first" id="dup-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:dup">permalink</a>
+
+    #<strong>dup</strong>  ⇒ <tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("dup-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:dup">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns a copy of the color.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt><span class="object_link"><a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color" title="Gosu::Color (class)">Color</a></span></tt>)</span>
+
+
+
+                —
+                <div class="inline">
+                  <p>a copy of the color.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L199">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+199</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 199</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_dup">dup</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="method_details ">
+          <h3 class="signature " id="gl-instance_method"><a class="permalink" href="https://www.rubydoc.info/github/gosu/gosu/Gosu%2FColor:gl">permalink</a>
+
+    #<strong>gl</strong>  ⇒ <tt>Integer</tt>
+
+
+
+
+
+</h3>
+          <script>
+$(document.getElementById("gl-instance_method")).prepend(
+  '<a class="permalink" href="/github/gosu/gosu/Gosu%2FColor:gl">permalink</a>');
+
+          </script>
+          <div class="docstring">
+            <div class="discussion">
+
+              <p>Returns a 32-bit representation of the color suitable for use with OpenGL calls. This color is stored in a fixed order in memory and its integer value may vary depending on your system's byte order.</p>
+
+
+            </div>
+          </div>
+          <div class="tags">
+
+            <p class="tag_title">Returns:</p>
+            <ul class="return">
+
+              <li>
+
+
+                <span class="type">(<tt>Integer</tt>)</span> —
+                <div class="inline">
+                  <p>a 32-bit OpenGL color.</p>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div><span class="showSource">[<a href="https://www.rubydoc.info/github/gosu/gosu/Gosu/Color#" class="toggleSource">View source</a>]</span> [<a target="_new" href="https://github.com/gosu/gosu/blob/Gosu/rdoc/gosu.rb#L195">View on GitHub</a>]
+          <table class="source_code">
+            <tbody>
+              <tr>
+                <td>
+                  <pre class="lines">
+
+195</pre>
+                </td>
+                <td>
+                  <pre class="code"><span class="info file"># File 'rdoc/gosu.rb', line 195</span>
+
+<span class="kw">def</span> <span class="id identifier rubyid_gl">gl</span><span class="semicolon">;</span> <span class="kw">end</span></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+      Generated on Fri Jul 27 22:20:01 2018 by
+      <a href="http://yardoc.org/" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a> 0.9.15 (ruby-2.3.1).
+    </div>
+
+
+
+
+    <script>
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-7172246-5', 'auto');
+ga('send', 'pageview');
+
+    </script>
+
+
+  </div>
+
+</body>
+
+</html>

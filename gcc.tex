@@ -50,9 +50,11 @@ generate a file with \verb|xlib.h| included \\ \verb|g++ <filename>.cpp -o <outn
  \item generate a file with \verb|GL/glu.h| included \\ \verb|g++ <filename>.cpp -o <outname> -lGLU|
  \item generate a file with \verb|GL/glew.h| included \\ \verb|g++ <filename>.cpp -o <outname> -lGLEW|
 \end{itemize}
-
+\subsection{MultiThread - future}
+generate a file with \verb|future.h| included \\ \verb|g++ <filename>.cpp -o <outname> -pthread|
 
 \newpage
+
 \section{Librairies}
 \subsection{Creating static lib}
 \begin{enumerate}
@@ -61,6 +63,7 @@ generate a file with \verb|xlib.h| included \\ \verb|g++ <filename>.cpp -o <outn
  \item Use the command :\\
        \verb|ar rcs lib<libname>.a <file1>.o <file2>.o|
 \end{enumerate}
+
 \subsection{Using static lib}
 Simply use the lib flags (MAKE SURE NOT TO WRITE LIB AND THE .A) (ALWAYS PUT AT THE END):\\
 \verb|g++ -static <executablefile>.cpp  -o <outputfile> -L<libpath> -l<libname>|
