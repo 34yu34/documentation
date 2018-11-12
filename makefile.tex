@@ -64,10 +64,10 @@ you can put a file name as a target:\\
 \subsubsection{files-files condition}
 you can put a lot of files by using \% operator:\\
 \verb|%<filesExtension>:%<filesExtension>|\\
-\verb|%.c:%.o|\\
+\verb|%.o:%.c|\\
 this will create n times the file-file condition!!!
-\subsection{subsection name}
 
+\subsection{Shortcuts}
 \begin{tabular}{|l|l|l|}
   \hline
   shortcut                & value     & example                                                      \\
@@ -75,7 +75,7 @@ this will create n times the file-file condition!!!
   \verb|$@| & target    & f.txt: a.txt b.txt c.txt                                     \\
                           &           & echo \verb|$@| $\rightarrow$ f.txt             \\ \hline
   \verb|$<| & first arg & f.txt: a.txt b.txt c.txt                                     \\
-                          &           & echo \verb|$<| $\rightarrow$  a.txt            \\ \hline
+                          &           & echo \verb|$<| $\rightarrow$ a.txt             \\ \hline
   \verb|$^| & all arg   & f.txt: a.txt b.txt c.txt                                     \\
                           &           & echo \verb|$^| $\rightarrow$ a.txt b.txt c.txt \\ \hline
 \end{tabular}
