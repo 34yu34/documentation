@@ -50,8 +50,8 @@ ex: \\
 \subsubsection{Target Condition type}
 there is 2 target condition type :
 \begin{enumerate}
- \item another target to be done prior to the one there
- \item a file
+  \item another target to be done prior to the one there
+  \item a file
 \end{enumerate}
 \subsubsection{Target-file condition}
 direct file is simple as putting file name: \\
@@ -66,8 +66,19 @@ you can put a lot of files by using \% operator:\\
 \verb|%<filesExtension>:%<filesExtension>|\\
 \verb|%.c:%.o|\\
 this will create n times the file-file condition!!!
+\subsection{subsection name}
 
-
+\begin{tabular}{|l|l|l|}
+  \hline
+  shortcut                & value     & example                                                      \\
+  \hline
+  \verb|$@| & target    & f.txt: a.txt b.txt c.txt                                     \\
+                          &           & echo \verb|$@| $\rightarrow$ f.txt             \\ \hline
+  \verb|$<| & first arg & f.txt: a.txt b.txt c.txt                                     \\
+                          &           & echo \verb|$<| $\rightarrow$  a.txt            \\ \hline
+  \verb|$^| & all arg   & f.txt: a.txt b.txt c.txt                                     \\
+                          &           & echo \verb|$^| $\rightarrow$ a.txt b.txt c.txt \\ \hline
+\end{tabular}
 
 
 
